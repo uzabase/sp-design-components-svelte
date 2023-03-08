@@ -1,0 +1,16 @@
+@charset "utf-8";
+.innner {
+  display: flex;
+  padding: 10px;
+}
+.button-inner li {
+  margin: 1rem 1rem;
+}
+h1 {
+  font-size: 20px;
+  margin: 10px;
+}
+h2 {
+  font-size: 16px;
+  margin: 10px;
+}
