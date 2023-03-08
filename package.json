@@ -11,6 +11,10 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write '{src,tests}/**/*.{ts,js,css,json,svelte}'"
   },
+  "files": [
+    "src/components",
+    "src/css"
+  ],
   "devDependencies": {
     "@acab/reset.css": "^0.5.3",
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
