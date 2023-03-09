@@ -1,6 +1,4 @@
-@import "@acab/reset.css";
-@import "sp-design-token-lib/styles/speeda-tokens.css";
-@import url(../../css/foundation.css);
+@import url(../../styles.css);
 
 .base {
   font-size: 10px;
