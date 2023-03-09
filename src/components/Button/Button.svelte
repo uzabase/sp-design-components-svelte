@@ -54,8 +54,8 @@
   };
 </script>
 
-<button data-testid="button" class={allStyles()} disabled={isDisable}
-  ><span class="base__label">{label}</span></button
->
+<button data-testid="button" class={allStyles()} disabled={isDisable}>
+  <span class="base__label">{label}</span>
+</button>
 
 <style src="./button.css"></style>
