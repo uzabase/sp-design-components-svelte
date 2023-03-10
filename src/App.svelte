@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Button from "./components/button/Button.svelte";
+  import Button from "./components/Button/Button.svelte";
   import Checkbox from "./components/Checkbox/Checkbox.svelte";
 
   function checkboxDispatch(event) {
@@ -9,7 +9,7 @@
 
 <main>
   <h1>Button type__default</h1>
-  <div class="innner button">
+  <div class="innner button"> 
     <ul class="button-inner">
       <li>
         <Button
