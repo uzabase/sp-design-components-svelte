@@ -1,5 +1,5 @@
 {
-  "name": "sp-design-components-svelte",
+  "name": "@sp-design/components-svelte",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
-    "sp-design-token-lib": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.4.1"
+    "@sp-design/token": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.5.2"
   }
 }
