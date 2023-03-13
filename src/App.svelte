@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Button from "./components/Button/Button.svelte";
-  import Checkbox from "./components/Checkbox/Checkbox.svelte";
+  import {Button,Checkbox} from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
