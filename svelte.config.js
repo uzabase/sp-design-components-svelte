@@ -1,13 +1,7 @@
 import preprocess from 'svelte-preprocess';
 
 const config = {
-  preprocess: preprocess({
-    build: {
-      rollupOptions: {
-        input: 'src/index.ts',
-      },
-    },
-  })
+  preprocess: preprocess({})
 }
 
 export default config;
