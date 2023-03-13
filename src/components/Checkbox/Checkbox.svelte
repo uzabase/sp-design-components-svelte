@@ -14,7 +14,7 @@
   }
 </script>
 
-<label class="base{isDisable ? ' isDisable' : ''}" data-testid="wrapper">
+<label class="base {isDisable ? 'isDisable' : ''}" data-testid="wrapper">
   <input
     type="checkbox"
     {value}
