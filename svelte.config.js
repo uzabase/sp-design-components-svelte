@@ -1,15 +1,14 @@
 import preprocess from 'svelte-preprocess';
-import postcss from 'rollup-plugin-postcss'
+import css from 'rollup-plugin-import-css';
 
 const config = {
   preprocess: preprocess({
     build: {
       rollupOptions: {
-        input: "src/index.ts",
+        plugins :[
+          css()
+        ]
       },
-      plugins :[
-        postcss({})
-      ]
     },
   })
 }
