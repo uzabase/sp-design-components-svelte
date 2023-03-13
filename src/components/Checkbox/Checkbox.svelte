@@ -35,4 +35,75 @@
   {/if}
 </label>
 
-<style src="./checkbox.css"></style>
+<style>
+  @import url(../../styles.css);
+
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column-gap: 4px;
+  padding-block: 4px;
+  padding-inline: 4px;
+  cursor: pointer;
+}
+
+.base .input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.base .checkmark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: var(--color-gray-0) 50% 50% no-repeat;
+  border: 1px solid var(--color-gray-50);
+  border-radius: 2px;
+}
+
+.base:hover .checkmark {
+  background-color: var(--color-gray-20);
+}
+
+.base .input:focus-visible + .checkmark {
+  border-color: var(--color-blue-90);
+  box-shadow: 0px 0px 0px 3px var(--color-blue-15);
+}
+
+.base .label {
+  color: var(--color-black-100);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.base :is(.input:checked, .input:indeterminate) + .checkmark {
+  background-color: var(--color-blue-100);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%227%22%20fill%3D%22none%22%3E%3Cpath%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%20d%3D%22m1%203%202%202%204-4%22%2F%3E%3C%2Fsvg%3E");
+  border-color: var(--color-blue-100);
+}
+
+.base :is(.input:checked, .input:indeterminate) + .checkmark {
+  background-color: var(--color-blue-90);
+  border-color: var(--color-blue-90);
+}
+
+.base .input:indeterminate + .checkmark {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%222%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%200h8v2H0z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.isDisable {
+  cursor: not-allowed;
+}
+
+:is(.isDisable, .isDisable:hover) .input:disabled + .checkmark {
+  background-color: var(--color-gray-40);
+  border-color: var(--color-gray-40);
+}
+
+.isDisable .input:disabled ~ .label {
+  color: var(--color-gray-50);
+}
+
+</style>
