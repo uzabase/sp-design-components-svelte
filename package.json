@@ -42,7 +42,7 @@
   "dependencies": {
     "@acab/reset.css": "^0.5.3"
   },
-  "peerDependenciesMeta": {
+  "peerDependencies": {
     "@sp-design/token": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.5.2"
   }
 }
