@@ -1,4 +1,15 @@
-@import "../../styles.css";
+.base,
+.base::before,
+.base::after,
+.base *,
+.base *::before,
+.base *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Hiragino Kaku Gothic ProN, "メイリオ", "Meiryo",
+    sans-serif;
+}
 
 .base {
   display: inline-flex;
