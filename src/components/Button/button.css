@@ -26,6 +26,11 @@
   word-break: break-word;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.base:disabled {
+  cursor: not-allowed;
 }
 
 .type__default.appearance__outline {
