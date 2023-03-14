@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {Button,Checkbox} from "./";
+  import { Button, Checkbox } from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
@@ -7,8 +7,10 @@
 </script>
 
 <main>
+  <p>リセットのテスト</p>
+  <p class="base">リセットのテスト2</p>
   <h1>Button type__default</h1>
-  <div class="innner button"> 
+  <div class="innner button">
     <ul class="button-inner">
       <li>
         <Button
