@@ -14,8 +14,8 @@
   },
   "files": [
     "src/components",
-    "styles.css",
-    "index.ts"
+    "src/styles.css",
+    "src/index.ts"
   ],
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
