@@ -39,8 +39,7 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
-    "@acab/reset.css": "^0.5.3",
-    "@sp-design/token": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.5.2"
+    "@acab/reset.css": "^0.5.3"
   },
   "peerDependencies": {
     "@sp-design/token": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.5.2"
