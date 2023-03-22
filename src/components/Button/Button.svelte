@@ -3,6 +3,8 @@
   export let isLoading: boolean = false;
   export let isSelected: boolean = false;
   export let isDisable: boolean = false;
+  let clazz: string | undefined;
+  export { clazz as class };
 
   export let type: "default" | "destructive" = "default";
   export let appearance: "outline" | "fill" | "text" = "outline";
@@ -50,6 +52,8 @@
     if (isDisable) styles.push("isDisable");
     if (isSelected) styles.push("isSelected");
     if (isLoading) styles.push("isLoading");
+    if (clazz) styles.push(clazz);
+
     return styles.join(" ");
   };
 </script>

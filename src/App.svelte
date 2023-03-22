@@ -18,6 +18,7 @@
           type="default"
           appearance="outline"
           size="medium"
+          class="testClass"
         />
       </li>
       <li>
