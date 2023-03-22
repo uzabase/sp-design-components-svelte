@@ -3,10 +3,10 @@
   export let isChecked: boolean = false;
   export let isIndeterminate: boolean = false;
   export let isDisable: boolean = false;
-  export let label: string;
+  export let label: string | undefined = undefined;
   export let value: string = "on";
-  export let name: string;
-  export let id: string;
+  export let name: string | undefined = undefined;
+  export let id: string | undefined = undefined;
 
   const dispatch = createEventDispatcher();
   function handleOnChange(event) {
@@ -14,7 +14,7 @@
   }
 </script>
 
-<label class="base {isDisable ? 'isDisable' : ''}" data-testid="wrapper">
+<label class="base{isDisable ? ' isDisable' : ''}" data-testid="wrapper">
   <input
     type="checkbox"
     {value}
