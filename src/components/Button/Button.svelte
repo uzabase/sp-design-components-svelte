@@ -3,7 +3,7 @@
   export let isLoading: boolean = false;
   export let isSelected: boolean = false;
   export let isDisable: boolean = false;
-  let clazz: string | undefined;
+  let clazz: string | undefined = undefined;
   export { clazz as class };
 
   export let type: "default" | "destructive" = "default";
