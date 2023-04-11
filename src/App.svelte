@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button, Checkbox } from "./";
+  import { Button, Card, Checkbox } from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
@@ -257,6 +257,91 @@
   <h2>onChangeのディスパッチ</h2>
   <div class="innner checkbox">
     <Checkbox label="label" on:change={checkboxDispatch} />
+  </div>
+  <h1>Card</h1>
+  <div class="innner">
+    <Card
+      title="smallたいとる"
+      time={new Date().toISOString()}
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="mediumたいとる"
+      time={Date.now()}
+      source="そーす"
+      image="/assets/cardImage2.png"
+      href="#"
+      size="medium"
+    />
+    <Card
+      title="largeたいとる"
+      time={Date.now()}
+      source="そーす"
+      image="/assets/cardImage3.png"
+      href="#"
+      size="large"
+    />
+  </div>
+  <h2>オプション要素</h2>
+  <div class="innner">
+    <Card
+      title="どっちもない"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="timeだけ"
+      time={new Date().toISOString()}
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="sourceだけ"
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+  </div>
+  <h2>gridレスポンシブ</h2>
+  <div class="innner card-inner">
+    <Card
+      title="smallたいとるながいながいながいながいながいながいながいながいながいながいながい"
+      time={new Date().toISOString()}
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="smallたいとる"
+      time={new Date().toISOString()}
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="smallたいとる"
+      time={new Date().toISOString()}
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
+    <Card
+      title="smallたいとる"
+      time={new Date().toISOString()}
+      source="そーす"
+      image="/assets/cardImage.png"
+      href="#"
+      size="small"
+    />
   </div>
 </main>
 
