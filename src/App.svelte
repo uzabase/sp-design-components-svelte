@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button, Card, Checkbox } from "./";
+  import { Button, Card, CardComment, Checkbox } from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
@@ -262,7 +262,7 @@
   <div class="innner">
     <Card
       title="smallたいとる"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage.png"
       href="#"
@@ -270,7 +270,7 @@
     />
     <Card
       title="mediumたいとる"
-      time={Date.now()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage2.png"
       href="#"
@@ -278,7 +278,7 @@
     />
     <Card
       title="largeたいとる"
-      time={Date.now()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage3.png"
       href="#"
@@ -295,7 +295,7 @@
     />
     <Card
       title="timeだけ"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       image="/assets/cardImage.png"
       href="#"
       size="small"
@@ -312,7 +312,7 @@
   <div class="innner card-inner">
     <Card
       title="smallたいとるながいながいながいながいながいながいながいながいながいながいながい"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage.png"
       href="#"
@@ -320,7 +320,7 @@
     />
     <Card
       title="smallたいとる"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage.png"
       href="#"
@@ -328,7 +328,7 @@
     />
     <Card
       title="smallたいとる"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage.png"
       href="#"
@@ -336,11 +336,25 @@
     />
     <Card
       title="smallたいとる"
-      time={new Date().toISOString()}
+      time="0000/11/22"
       source="そーす"
       image="/assets/cardImage.png"
       href="#"
       size="small"
+    />
+  </div>
+  <h1>CardComment</h1>
+  <div class="innner">
+    <CardComment
+            title="smallたいとる"
+            time="0000/11/22"
+            source="そーす"
+            image="/assets/cardImage.png"
+            href="#"
+            name="なまえ"
+            job="肩書き"
+            profileImage="/assets/cardCommentProfile.png"
+            comment="コメント"
     />
   </div>
 </main>

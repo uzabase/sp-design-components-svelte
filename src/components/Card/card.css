@@ -37,6 +37,10 @@
   -webkit-line-clamp: 2;
 }
 
+.titleIn {
+  font-style: normal;
+}
+
 .note {
   display: inline-flex;
   color: var(--color-gray-70);
@@ -44,13 +48,13 @@
   line-height: 1;
 }
 
-.note .connect::before {
+.connect::before {
   content: "-";
   display: inline;
   margin-inline: 4px;
 }
 
-.note .source {
+.source {
   font-style: normal;
 }
 
