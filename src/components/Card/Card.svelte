@@ -9,7 +9,6 @@
 
   let dataTime: string;
   $: dataTime = time && time.split("/").join("-");
-
 </script>
 
 <div>
