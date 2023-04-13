@@ -5,10 +5,10 @@
   export let time: string | undefined = undefined;
   export let source: string | undefined = undefined;
   export let isOutbound: boolean = false;
-  export let name: string;
-  export let job: string;
-  export let profileImage: string;
-  export let comment: string;
+  export let name: string; //TODO: 必須か？
+  export let job: string; //TODO: 必須か？
+  export let profileImage: string; //TODO: 必須か？
+  export let comment: string; //TODO: 必須か？
 
   let dataTime: string;
   $: dataTime = time && time.split("/").join("-");
@@ -21,7 +21,6 @@
         <p class="title"><cite class="titleIn">{title}</cite></p>
         {#if time || source}
           <p class="note">
-            <!-- TODO: データベースに含まれるdatatime用の型とフロントに持ってくるべき型はなにか -->
             {#if time}<time datetime={dataTime}>{time}</time>{/if}
             {#if time && source}<span class="connect" />{/if}
             {#if source}<cite class="source">{source}</cite>{/if}
