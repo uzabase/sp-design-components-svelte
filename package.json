@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
-    "@popperjs/core": "^2.11.7"
+    "@popperjs/core": "^2.11.7",
+    "@sp-design/token": "git+ssh://git@bitbucket.org:uzabase/sp-design-token.git#semver:^0.5.2"
   }
 }
