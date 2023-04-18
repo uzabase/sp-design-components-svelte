@@ -1,7 +1,7 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
 
-  export let label: string; // TODO: 長さは？
+  export let label: string;
   export let isOpen: boolean = false;
 
   function handleClick() {
@@ -10,7 +10,7 @@
 </script>
 
 <div class={isOpen ? "isOpen" : ""}>
-  <button on:click={handleClick} class="label">{label}</button>
+  <button on:click={handleClick} class="label"><span class="labelIn">{label}</span></button>
   {#if isOpen}
     <div in:slide={{ duration: 200 }} out:slide={{ duration: 200 }}>
       <slot />

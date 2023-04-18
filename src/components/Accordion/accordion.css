@@ -8,11 +8,6 @@
   background: var(--color-gray-0);
   border: 0;
   border-top: 1px solid var(--color-gray-40);
-  color: var(--color-black-100);
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  line-height: 1;
 }
 
 .label::after {
@@ -27,6 +22,18 @@
 
 .label:hover {
   background: var(--color-gray-20);
+}
+
+.labelIn {
+  display: -webkit-box;
+  color: var(--color-black-100);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .isOpen .label::after {
