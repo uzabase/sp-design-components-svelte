@@ -10,7 +10,9 @@
 </script>
 
 <div class={isOpen ? "isOpen" : ""}>
-  <button on:click={handleClick} class="label"><span class="labelIn">{label}</span></button>
+  <button on:click={handleClick} class="label">
+    <span class="labelIn">{label}</span>
+  </button>
   {#if isOpen}
     <div in:slide={{ duration: 200 }} out:slide={{ duration: 200 }}>
       <slot />
