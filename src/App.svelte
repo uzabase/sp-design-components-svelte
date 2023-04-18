@@ -1,5 +1,13 @@
 <script lang="ts">
-  import { Accordion, Button, Card, CardComment, Checkbox } from "./";
+  import {
+    Accordion,
+    Button,
+    Card,
+    CardComment,
+    Checkbox,
+    ContextMenu,
+    ContextMenuItem,
+  } from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
@@ -371,6 +379,14 @@
       ><p>なかみ<br />なかみ</p></Accordion
     >
   </div>
+  <h1>ContextMenu</h1>
+  <ContextMenu>
+    <ContextMenuItem label="ラベル" />
+    <ContextMenuItem label="ラベル2" />
+    <ContextMenuItem
+      label="ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3ラベル3"
+    />
+  </ContextMenu>
 </main>
 
 <style src="./app.css"></style>

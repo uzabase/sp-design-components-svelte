@@ -1,0 +1,27 @@
+.base {
+  display: flex;
+}
+
+.label {
+  flex-basis: 100%;
+  padding-block: 7px;
+  padding-inline: 8px;
+  background: transparent;
+  border: 0;
+  line-height: 1;
+}
+
+.label:hover {
+  background: var(--color-gray-20);
+}
+
+.labelIn {
+  display: -webkit-box;
+  color: var(--color-black-100);
+  font-size: 12px;
+  text-align: left;
+  line-height: 1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
