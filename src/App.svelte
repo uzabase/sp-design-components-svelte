@@ -7,6 +7,7 @@
     Checkbox,
     ContextMenu,
     ContextMenuItem,
+    Tooltip
   } from "./";
 
   function checkboxDispatch(event) {
@@ -15,8 +16,17 @@
 </script>
 
 <main>
-  <p>リセットのテスト</p>
-  <p class="base">リセットのテスト2</p>
+  <h1>Tooltip</h1>
+  <div class="innner tooltip">
+    <Tooltip label="このボタンはButtonコンポーネントを使っています" placement="top">
+      <Button
+        label="default,fill,medium"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+  </div>
   <h1>Button type__default</h1>
   <div class="innner button">
     <ul class="button-inner">
