@@ -1,0 +1,12 @@
+.label {
+  color: var(--color-black-100);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.text {
+  color: var(--color-black-100);
+  font-size: 12px;
+  line-height: 1.6;
+}

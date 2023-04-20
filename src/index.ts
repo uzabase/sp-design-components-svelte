@@ -4,4 +4,8 @@ export { default as Button } from "./components/Button/Button.svelte";
 export { Card, CardComment } from "./components/Card/";
 export { Checkbox, CheckboxList, CheckboxText } from "./components/Checkbox/";
 export { ContextMenu, ContextMenuItem } from "./components/ContextMenu/";
+export {
+  DefinitionList,
+  DefinitionListItem,
+} from "./components/DefinitionList/";
 export { default as Tooltip } from "./components/Tooltip/Tooltip.svelte";
