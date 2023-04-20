@@ -1,0 +1,26 @@
+@import "checkmark.css";
+
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.label {
+  color: var(--color-black-100);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.isDisable {
+  cursor: not-allowed;
+}
+
+.isDisable .label {
+  color: var(--color-gray-50);
+}
+
+.base:hover .checkmarkIn {
+  background-color: var(--color-gray-20);
+}

@@ -5,20 +5,25 @@
     Card,
     CardComment,
     Checkbox,
+    CheckboxText,
     ContextMenu,
     ContextMenuItem,
-    Tooltip
+    Tooltip,
   } from "./";
 
   function checkboxDispatch(event) {
     console.log(event.detail.event.target.checked);
+    // console.log(event.detail);
   }
 </script>
 
 <main>
   <h1>Tooltip</h1>
   <div class="innner tooltip">
-    <Tooltip label="このボタンはButtonコンポーネントを使っています" placement="top">
+    <Tooltip
+      label="このボタンはButtonコンポーネントを使っています"
+      placement="top"
+    >
       <Button
         label="default,fill,medium"
         type="default"
@@ -258,23 +263,23 @@
     <Checkbox isIndeterminate={true} isDisable={true} />
   </div>
   <div class="innner checkbox">
-    <Checkbox label="label" />
-    <Checkbox label="label" isChecked={true} />
-    <Checkbox label="label" isIndeterminate={true} />
-    <Checkbox label="label" isDisable={true} />
-    <Checkbox label="label" isChecked={true} isDisable={true} />
-    <Checkbox label="label" isIndeterminate={true} isDisable={true} />
+    <CheckboxText label="label" />
+    <CheckboxText label="label" isChecked={true} />
+    <CheckboxText label="label" isIndeterminate={true} />
+    <CheckboxText label="label" isDisable={true} />
+    <CheckboxText label="label" isChecked={true} isDisable={true} />
+    <CheckboxText label="label" isIndeterminate={true} isDisable={true} />
   </div>
   <h2>フォームパーツとしての働き</h2>
   <div class="innner checkbox">
     <form action="./" method="get">
-      <Checkbox label="label" name="checkbox" />
+      <CheckboxText label="label" name="checkbox" />
       <input type="submit" />
     </form>
   </div>
   <h2>onChangeのディスパッチ</h2>
   <div class="innner checkbox">
-    <Checkbox label="label" on:change={checkboxDispatch} />
+    <CheckboxText label="label" on:change={checkboxDispatch} />
   </div>
   <h1>Card</h1>
   <div class="innner">
