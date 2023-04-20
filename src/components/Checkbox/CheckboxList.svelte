@@ -1,36 +1,37 @@
 <script lang="ts">
+  import Checkmark from "./Checkmark.svelte";
   import { createEventDispatcher } from "svelte";
 
   export let isChecked: boolean = false;
   export let isIndeterminate: boolean = false;
   export let isDisable: boolean = false;
-  export let clazz: string = "";
   export let value: string = "on";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
+  export let label: string;
 
   const dispatch = createEventDispatcher();
   function handleOnChange(event) {
-    dispatch("change", { event });
+    isChecked = !isChecked;
+    dispatch("change", event.detail);
   }
 </script>
 
-<span class="base {clazz}">
-  <input
-    type="checkbox"
+<label
+  class="base{isDisable ? ' isDisable' : ''}{isChecked ? ' isChecked' : ''}"
+>
+  <Checkmark
     {value}
     {name}
     {id}
-    checked={isChecked}
-    indeterminate={isIndeterminate}
-    disabled={isDisable}
-    class="input"
+    {isChecked}
+    {isIndeterminate}
+    {isDisable}
     on:change={handleOnChange}
-    data-testid="input"
   />
-  <span class="checkmark">
-    <span class="checkmarkIn" />
+  <span class="label" data-testid="label">
+    {label}
   </span>
-</span>
+</label>
 
-<style src="./checkmark.css"></style>
+<style src="./checkboxList.css"></style>

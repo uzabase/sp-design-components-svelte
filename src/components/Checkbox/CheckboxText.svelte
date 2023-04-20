@@ -6,6 +6,7 @@
   export let isIndeterminate: boolean = false;
   export let isDisable: boolean = false;
   export let value: string = "on";
+  export let clazz: string = "";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
   export let label: string;
@@ -14,14 +15,12 @@
   function handleOnChange(event) {
     dispatch("change", event.detail);
   }
-
-  let isHover: boolean = false;
 </script>
 
 <label
   class="base{isDisable ? ' isDisable' : ''}"
-  on:mouseenter={() => (isHover = true)}
-  on:mouseleave={() => (isHover = false)}
+  on:mouseenter={() => (clazz = "isHover")}
+  on:mouseleave={() => (clazz = "")}
 >
   <Checkmark
     {value}
@@ -30,7 +29,7 @@
     {isChecked}
     {isIndeterminate}
     {isDisable}
-    {isHover}
+    {clazz}
     on:change={handleOnChange}
   />
   <span class="label" data-testid="label">

@@ -1,8 +1,17 @@
 .base {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-block: 1px;
   cursor: pointer;
+}
+
+.base:hover:not(.isDisable) {
+  background: var(--color-gray-20);
+}
+
+.base.isChecked {
+  background: var(--color-blue-10);
 }
 
 .base.isDisable {

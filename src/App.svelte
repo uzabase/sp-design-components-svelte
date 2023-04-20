@@ -6,6 +6,7 @@
     CardComment,
     Checkbox,
     CheckboxText,
+    CheckboxList,
     ContextMenu,
     ContextMenuItem,
     Tooltip,
@@ -262,6 +263,18 @@
     <Checkbox isChecked={true} isDisable={true} />
     <Checkbox isIndeterminate={true} isDisable={true} />
   </div>
+  <h2>フォームパーツとしての働き</h2>
+  <div class="innner checkbox">
+    <form action="./" method="get">
+      <Checkbox name="checkbox" />
+      <input type="submit" />
+    </form>
+  </div>
+  <h2>onChangeのディスパッチ</h2>
+  <div class="innner checkbox">
+    <Checkbox on:change={checkboxDispatch} />
+  </div>
+  <h1>CheckboxText</h1>
   <div class="innner checkbox">
     <CheckboxText label="label" />
     <CheckboxText label="label" isChecked={true} />
@@ -281,6 +294,10 @@
   <div class="innner checkbox">
     <CheckboxText label="label" on:change={checkboxDispatch} />
   </div>
+  <h1>CheckboxList</h1>
+  <CheckboxList label="label" />
+  <CheckboxList label="label" isChecked={true} />
+  <CheckboxList label="label" isDisable={true} />
   <h1>Card</h1>
   <div class="innner">
     <Card
