@@ -1,0 +1,78 @@
+.base {
+  position: relative;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 4px;
+  padding-block: 6px;
+  padding-inline: 16px;
+  background: none;
+  border: 1px solid var(--color-black-100);
+  border-radius: 5px;
+  color: var(--color-black-100);
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.action::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23191919%22%20d%3D%22M8%2011.327%202.667%205.993l.706-.706L8%209.913l4.627-4.626.706.706L8%2011.327Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.action:hover,
+.action:focus {
+  border-color: var(--color-gray-70);
+  color: var(--color-gray-70);
+}
+
+:is(.action:hover, .action:focus)::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%237f7f7f%22%20d%3D%22M8%2011.327%202.667%205.993l.706-.706L8%209.913l4.627-4.626.706.706L8%2011.327Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.action:disabled {
+  background: var(--color-gray-10);
+  border-color: var(--color-gray-40);
+  color: var(--color-gray-50);
+}
+
+.action:disabled::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23cbcbcb%22%20d%3D%22M8%2011.327%202.667%205.993l.706-.706L8%209.913l4.627-4.626.706.706L8%2011.327Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 202px;
+  margin-block-start: 8px;
+  padding-block: 8px;
+  background: var(--color-gray-0);
+  border: 1px solid var(--color-gray-30);
+  border-radius: 5px;
+  box-shadow: 0px 3px 12px 0px rgba(25, 25, 25, 0.2);
+}
+
+.isShow:not(.isDisable) .action {
+  background: var(--color-blue-100);
+  border-color: var(--color-blue-100);
+  color: var(--color-gray-0);
+}
+
+.isShow:not(.isDisable) .action::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M8%2011.327%202.667%205.993l.706-.706L8%209.913l4.627-4.626.706.706L8%2011.327Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.isShow:not(.isDisable) .action:hover {
+  background: var(--color-blue-90);
+  border-color: var(--color-blue-90);
+}
+
+.isShow:not(.isDisable) .dropdown {
+  display: block;
+}

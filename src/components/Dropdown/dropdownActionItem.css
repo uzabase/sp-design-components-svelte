@@ -1,0 +1,12 @@
+.base {
+  padding-block: 7px;
+  padding-inline: 8px;
+  color: var(--color-black-100);
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.base:hover {
+  background: var(--color-gray-20);
+}
