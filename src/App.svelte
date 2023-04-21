@@ -465,6 +465,14 @@
       label="label"
       text="だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。"
     />
+    <DefinitionListItem
+      label="label"
+      text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    />
+    <DefinitionListItem
+      label="label"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    />
   </DefinitionList>
   <h1>DropdownAction</h1>
   <div class="innner" style="justify-content: flex-end">
