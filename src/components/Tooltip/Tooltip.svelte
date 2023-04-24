@@ -2,9 +2,9 @@
   import { createPopperActions } from "svelte-popperjs";
 
   export let label: string;
-  export let placement: "left" | "right" | "top" | "bottom"  = "top";
-
-  //TODO arrowをOFFにするオプションなどあるか
+  export let placement: "left" | "right" | "top" | "bottom" = "top";
+  export let zindex: string = "10";
+  let showTooltip = false;
 
   const [popperRef, popperContent] = createPopperActions({
     placement: placement,
@@ -13,11 +13,10 @@
   const extraOpts = {
     modifiers: [{ name: "offset", options: { offset: [0, 8] } }],
   };
-
-  let showTooltip = false;
 </script>
 
-<div data-testid="tooltipAffiliation"
+<div
+  data-testid="tooltipAffiliation"
   class="tooltip__affiliation"
   use:popperRef
   on:mouseenter={() => (showTooltip = true)}
@@ -27,9 +26,15 @@
 </div>
 
 {#if showTooltip}
-  <div class="tooltip__main" use:popperContent={extraOpts}>
+  <div
+    data-testid="tooltipMain"
+    class="tooltip__main"
+    style="z-index:{zindex}"
+    use:popperContent={extraOpts}
+  >
     <span data-testid="tooltipLabel" class="tooltip__label">{label}</span>
     <div class="tooltip__arrow" data-popper-arrow />
   </div>
 {/if}
+
 <style src="./tooltip.css"></style>

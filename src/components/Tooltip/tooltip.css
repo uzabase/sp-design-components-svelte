@@ -1,13 +1,14 @@
 /**/
 .tooltip__main {
   padding: 8px;
-  background: #191919;
+  background: var(--color-black-100);
   box-shadow: 0px 3px 12px rgba(25, 25, 25, 0.2);
   border-radius: 2px;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 10px;
   line-height: 160%;
-  color: #ffffff;
+  color: var(--color-gray-0);
+  z-index: 10;
 }
 .tooltip__label {
   font-size: 10px;
@@ -21,9 +22,10 @@
 }
 
 .tooltip__arrow::before {
-  content: "";
+  /* content: "";
   transform: rotate(45deg);
-  background: #333;
+  background: #333; */
+  display: none;
 }
 
 :global(.tooltip[data-popper-placement^="bottom"] > .tooltip__arrow) {
@@ -40,7 +42,4 @@
 
 :global(.tooltip[data-popper-placement^="right"] > .tooltip__arrow) {
   left: -4px;
-}
-:global(.tooltip[data-popper-placement^="none"] > .tooltip__arrow) {
-  display: none;
 }

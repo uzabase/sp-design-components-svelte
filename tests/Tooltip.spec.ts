@@ -1,74 +1,59 @@
-import { fireEvent } from "@testing-library/dom";
-import { userEvent } from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
 import Tooltip from "../src/components/Tooltip/Tooltip.svelte";
-//test 最初にtooltipが隠れている
-//test tooltipの中身が表示される
 
-test("tooltipの中身が表示される", () => {
+//test 最初はtooltipが非表示である
+test("最初はtooltipが非表示である", () => {
+  const { queryByTestId } = render(Tooltip, {
+    label: "<ANY>",
+  });
+  expect(queryByTestId("tooltipMain")).toBeNull();
+});
+
+//test tooltipがmouseenterで表示される
+test("tooltipがmouseenterで表示される", async () => {
+  const { getByTestId, queryByTestId } = render(Tooltip, {
+    label: "<ANY>",
+  });
+  const tooltipAffiliation = getByTestId("tooltipAffiliation");
+  await userEvent.hover(tooltipAffiliation);
+
+  expect(queryByTestId("tooltipMain")).toBeDefined();
+});
+
+test("中身のテキストが表示される", async () => {
   const { getByTestId } = render(Tooltip, {
     label: "ラベル",
-  }); 
-
-  // マウスオーバーを模擬
-  const termsAndConditions = screen.getByText(/terms and conditions/i);
-  userEvent.hover(termsAndConditions);
-
-  // ポップアップが表示されていれば成功
-  const popover = screen.getByText(/no ice cream will actually be delivered/i);
-  expect(popover).toBeInTheDocument();
+  });
+  const tooltipAffiliation = getByTestId("tooltipAffiliation");
+  await userEvent.hover(tooltipAffiliation);
 
   expect(getByTestId("tooltipLabel").textContent).toBe("ラベル");
 });
 
-
-test('最初にtooltipが隠れている', async () => {
+test("placementが正しく渡せている", async () => {
   const { getByTestId } = render(Tooltip, {
-    label: "ラベル",
+    placement: "bottom",
+    label: "<ANY>",
   });
-  const nullPopover = screen.queryByText(
-  );
+  const tooltipAffiliation = getByTestId("tooltipAffiliation");
+  await userEvent.hover(tooltipAffiliation);
 
-  expect(nullPopover).not.toBeInTheDocument();
-
-  // ポップアップが初期状態で隠れていれば成功
-  // const nullPopover = screen.queryByText(
-  //   /no ice cream will actually be delivered/i
-  // );
-  expect(getByTestId("tooltipAffiliation")).not.toBeInTheDocument();
-
-  // マウスオーバーを模擬
-  const termsAndConditions = screen.getByText(/terms and conditions/i);
-  userEvent.hover(termsAndConditions);
-
-  // ポップアップが表示されていれば成功
-  const popover = screen.getByText(/no ice cream will actually be delivered/i);
-  expect(popover).toBeInTheDocument();
-
-  // マウスオーバーの解除を模擬
-  userEvent.unhover(termsAndConditions);
-  await waitForElementToBeRemoved(() =>
-    screen.queryByText(/no ice cream will actually be delivered/i)
+  expect(getByTestId("tooltipMain").getAttribute("data-popper-placement")).toBe(
+    "bottom"
   );
 });
 
+//test tooltipがmouseleaveで非表示になる
+test("tooltipがmouseleaveで非表示になる", async () => {
+  const { getByTestId, queryByTestId } = render(Tooltip, {
+    label: "<ANY>",
+  });
+  const tooltipAffiliation = getByTestId("tooltipAffiliation");
+  await userEvent.hover(tooltipAffiliation);
+  await userEvent.unhover(tooltipAffiliation);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//あとでやる
-//jestプラグイン入れる
-//testがつなきさんのように動かせないか
-
+  expect(queryByTestId("tooltipMain")).toBeNull();
+});

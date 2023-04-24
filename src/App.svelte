@@ -24,19 +24,41 @@
 
 <main>
   <h1>Tooltip</h1>
-  <div class="innner tooltip">
-    <Tooltip
-      label="このボタンはButtonコンポーネントを使っています"
-      placement="top"
-    >
-      <Button
-        label="default,fill,medium"
-        type="default"
-        appearance="outline"
-        size="medium"
-      />
-    </Tooltip>
-  </div>
+  <div class="innner tooltip button">
+         <Tooltip label="placement=top" placement="top" zindex="12">
+        <Button
+          label="placement=top"
+          type="default"
+          appearance="outline"
+          size="medium"
+        />
+      </Tooltip>     
+        <Tooltip label="placement=bottom" placement="bottom" zindex="">
+          <Button
+            label="placement=bottom"
+            type="default"
+            appearance="outline"
+            size="medium"
+          />
+        </Tooltip>    
+        <Tooltip label="placement=left" placement="left">
+          <Button
+            label="placement=left"
+            type="default"
+            appearance="outline"
+            size="medium"
+          />
+        </Tooltip> 
+        <Tooltip label="placement=right" placement="right">
+          <Button
+            label="placement=right"
+            type="default"
+            appearance="outline"
+            size="medium"
+          />
+        </Tooltip>
+        </div>
+
   <h1>Button type__default</h1>
   <div class="innner button">
     <ul class="button-inner">
