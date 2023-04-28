@@ -5,11 +5,11 @@
   cursor: pointer;
 }
 
-.base.isDisable {
+.base.disabled {
   cursor: not-allowed;
 }
 
-.base.isDisable .label {
+.base.disabled .label {
   color: var(--color-gray-50);
 }
 

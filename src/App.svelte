@@ -25,39 +25,39 @@
 <main>
   <h1>Tooltip</h1>
   <div class="innner tooltip button">
-         <Tooltip label="placement=top" placement="top" zindex="12">
-        <Button
-          label="placement=top"
-          type="default"
-          appearance="outline"
-          size="medium"
-        />
-      </Tooltip>     
-        <Tooltip label="placement=bottom" placement="bottom" zindex="">
-          <Button
-            label="placement=bottom"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip>    
-        <Tooltip label="placement=left" placement="left">
-          <Button
-            label="placement=left"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip> 
-        <Tooltip label="placement=right" placement="right">
-          <Button
-            label="placement=right"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip>
-        </div>
+    <Tooltip label="placement=top" placement="top" zindex="12">
+      <Button
+        label="placement=top"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="placement=bottom" placement="bottom" zindex="">
+      <Button
+        label="placement=bottom"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="placement=left" placement="left">
+      <Button
+        label="placement=left"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="placement=right" placement="right">
+      <Button
+        label="placement=right"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+  </div>
 
   <h1>Button type__default</h1>
   <div class="innner button">
@@ -283,11 +283,11 @@
   <h1>Checkbox</h1>
   <div class="innner checkbox">
     <Checkbox />
-    <Checkbox isChecked={true} />
-    <Checkbox isIndeterminate={true} />
-    <Checkbox isDisable={true} />
-    <Checkbox isChecked={true} isDisable={true} />
-    <Checkbox isIndeterminate={true} isDisable={true} />
+    <Checkbox checked={true} />
+    <Checkbox indeterminate={true} />
+    <Checkbox disabled={true} />
+    <Checkbox checked={true} disabled={true} />
+    <Checkbox indeterminate={true} disabled={true} />
   </div>
   <h2>フォームパーツとしての働き</h2>
   <div class="innner checkbox">
@@ -303,11 +303,11 @@
   <h1>CheckboxText</h1>
   <div class="innner checkbox">
     <CheckboxText label="label" />
-    <CheckboxText label="label" isChecked={true} />
-    <CheckboxText label="label" isIndeterminate={true} />
-    <CheckboxText label="label" isDisable={true} />
-    <CheckboxText label="label" isChecked={true} isDisable={true} />
-    <CheckboxText label="label" isIndeterminate={true} isDisable={true} />
+    <CheckboxText label="label" checked={true} />
+    <CheckboxText label="label" indeterminate={true} />
+    <CheckboxText label="label" disabled={true} />
+    <CheckboxText label="label" checked={true} disabled={true} />
+    <CheckboxText label="label" indeterminate={true} disabled={true} />
   </div>
   <h2>フォームパーツとしての働き</h2>
   <div class="innner checkbox">
@@ -322,8 +322,8 @@
   </div>
   <h1>CheckboxList</h1>
   <CheckboxList label="label" />
-  <CheckboxList label="label" isChecked={true} />
-  <CheckboxList label="label" isDisable={true} />
+  <CheckboxList label="label" checked={true} />
+  <CheckboxList label="label" disabled={true} />
   <h1>Card</h1>
   <div class="innner">
     <Card

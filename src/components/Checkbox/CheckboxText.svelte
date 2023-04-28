@@ -1,9 +1,9 @@
 <script lang="ts">
   import Checkmark from "./Checkmark.svelte";
 
-  export let isChecked: boolean = false;
-  export let isIndeterminate: boolean = false;
-  export let isDisable: boolean = false;
+  export let checked: boolean = false;
+  export let indeterminate: boolean = false;
+  export let disabled: boolean = false;
   export let value: string = "on";
   export let clazz: string = "";
   export let name: string | undefined = undefined;
@@ -12,17 +12,17 @@
 </script>
 
 <label
-  class="base{isDisable ? ' isDisable' : ''}"
-  on:mouseenter={() => (clazz = "isHover")}
+  class="base{disabled ? ' disable' : ''}"
+  on:mouseenter={() => (clazz = "hover")}
   on:mouseleave={() => (clazz = "")}
 >
   <Checkmark
     {value}
     {name}
     {id}
-    {isChecked}
-    {isIndeterminate}
-    {isDisable}
+    {checked}
+    {indeterminate}
+    {disabled}
     {clazz}
     on:change
   />

@@ -1,9 +1,9 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
 
-  export let isChecked: boolean = false;
-  export let isIndeterminate: boolean = false;
-  export let isDisable: boolean = false;
+  export let checked: boolean = false;
+  export let indeterminate: boolean = false;
+  export let disabled: boolean = false;
   export let clazz: string = "";
   export let value: string = "on";
   export let name: string | undefined = undefined;
@@ -21,9 +21,9 @@
     {value}
     {name}
     {id}
-    checked={isChecked}
-    indeterminate={isIndeterminate}
-    disabled={isDisable}
+    {checked}
+    {indeterminate}
+    {disabled}
     class="input"
     on:change={handleOnChange}
     data-testid="input"

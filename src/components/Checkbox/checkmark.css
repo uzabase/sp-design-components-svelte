@@ -24,7 +24,7 @@
   border-radius: 2px;
 }
 
-:is(.base:hover, .isHover) .checkmarkIn {
+:is(.base:hover, .hover) .checkmarkIn {
   background-color: var(--color-gray-20);
 }
 
@@ -39,7 +39,7 @@
   border-color: var(--color-blue-100);
 }
 
-:is(.base:hover, .isHover)
+:is(.base:hover, .hover)
   :is(.input:checked, .input:indeterminate)
   + .checkmark
   .checkmarkIn {

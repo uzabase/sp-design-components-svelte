@@ -6,23 +6,23 @@
   cursor: pointer;
 }
 
-.base.isChecked {
+.base.checked {
   background: var(--color-blue-10);
 }
 
-.base:hover:not(.isDisable) {
+.base:hover:not(.disabled) {
   background: var(--color-gray-20);
 }
 
-.base:hover.isChecked {
+.base:hover.checked {
   background: var(--color-blue-15);
 }
 
-.base.isDisable {
+.base.disabled {
   cursor: not-allowed;
 }
 
-.base.isDisable .label {
+.base.disabled .label {
   color: var(--color-gray-50);
 }
 
