@@ -11,7 +11,14 @@
 
   const dispatch = createEventDispatcher();
   function handleOnChange(event) {
-    dispatch("change", { event });
+    dispatch(
+      "change",
+      event.target.indeterminate
+        ? "indeterminate"
+        : event.target.checked
+        ? "checked"
+        : "unchecked"
+    );
   }
 </script>
 

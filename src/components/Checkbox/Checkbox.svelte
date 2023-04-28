@@ -1,6 +1,5 @@
 <script lang="ts">
   import Checkmark from "./Checkmark.svelte";
-  import { createEventDispatcher } from "svelte";
 
   export let checked: boolean = false;
   export let indeterminate: boolean = false;
@@ -8,11 +7,6 @@
   export let value: string = "on";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
-
-  const dispatch = createEventDispatcher();
-  function handleOnChange(event) {
-    dispatch("change", event.detail);
-  }
 </script>
 
 <label class="base">
@@ -23,7 +17,7 @@
     {checked}
     {indeterminate}
     {disabled}
-    on:change={handleOnChange}
+    on:change
   />
 </label>
 

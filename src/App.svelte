@@ -17,8 +17,7 @@
   } from "./";
 
   function checkboxDispatch(event) {
-    console.log(event.detail.event.target.checked);
-    // console.log(event.detail);
+    console.log(event.detail);
   }
 </script>
 
@@ -324,6 +323,7 @@
   <CheckboxList label="label" />
   <CheckboxList label="label" checked={true} />
   <CheckboxList label="label" disabled={true} />
+  <CheckboxList label="onChangeのディスパッチ" on:change={checkboxDispatch} />
   <h1>Card</h1>
   <div class="innner">
     <Card
