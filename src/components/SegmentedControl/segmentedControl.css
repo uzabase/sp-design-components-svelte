@@ -1,0 +1,40 @@
+
+.segmentedControl__base{
+    display: flex;
+}
+.segmentedControl__item label{
+    font-size: 10px;
+    background-color: var(--color-gray-10);
+    padding: 8px;
+    border: 1px solid var(--color-gray-40);
+    border-right: none;
+    color: var(--color-gray-80);
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+.segmentedControl__item:first-child label{
+    border-radius: 5px 0 0 5px;
+}
+.segmentedControl__item:last-child label{
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid var(--color-gray-40);
+}
+.segmentedControl__radio{
+    display: none;
+}
+.segmentedControl__item:has(.segmentedControl__radio:checked) label{
+    background-color: var(--color-blue-100);
+    border: 1px solid var(--color-blue-100);
+    color: var(--color-gray-0);
+    font-weight: bold;
+}
+
+/*temp*/
+.segmentedControl__base{
+    width:600px;
+    display: flex;
+}
+.segmentedControl__item{
+    width: 33%;
+}
