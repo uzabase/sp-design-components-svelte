@@ -6,12 +6,16 @@
   cursor: pointer;
 }
 
+.base.isChecked {
+  background: var(--color-blue-10);
+}
+
 .base:hover:not(.isDisable) {
   background: var(--color-gray-20);
 }
 
-.base.isChecked {
-  background: var(--color-blue-10);
+.base:hover.isChecked {
+  background: var(--color-blue-15);
 }
 
 .base.isDisable {
