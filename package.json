@@ -1,7 +1,7 @@
 {
   "name": "@sp-design/components-svelte",
   "private": true,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
@@ -33,7 +33,6 @@
     "svelte": "^3.55.1",
     "svelte-check": "^2.10.3",
     "svelte-jester": "^2.3.2",
-    "svelte-popperjs": "^1.3.2",
     "svelte-preprocess": "^5.0.1",
     "ts-jest": "^29.0.5",
     "tslib": "^2.5.0",
@@ -43,6 +42,7 @@
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
     "@popperjs/core": "^2.11.7",
-    "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^0.5.2"
+    "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^0.5.2",
+    "svelte-popperjs": "^1.3.2"
   }
 }
