@@ -12,7 +12,7 @@
 </script>
 
 <label
-  class="base{disabled ? ' disable' : ''}"
+  class="base{disabled ? ' disabled' : ''}"
   on:mouseenter={() => (clazz = "hover")}
   on:mouseleave={() => (clazz = "")}
 >

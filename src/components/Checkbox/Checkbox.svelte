@@ -15,7 +15,7 @@
   }
 </script>
 
-<label>
+<label class="base">
   <Checkmark
     {value}
     {name}
@@ -27,5 +27,4 @@
   />
 </label>
 
-<style>
-</style>
+<style src="./checkbox.css"></style>
