@@ -8,6 +8,3 @@ test("ボタンにラベルが表示される", () => {
   });
   expect(getByTestId("button").textContent).toBe("ラベル");
 });
-
-//相談する
-//ラベルが空欄だった場合、エラーを返す

@@ -28,9 +28,7 @@ test("SegmentedControlのボタンにvalueが入っている", () => {
   expect((getAllByTestId("segmentedControlRadio")[0] as HTMLInputElement).value).toBe("ラベル");
 });
 
-
-//render2回呼ぶ→その呼んだ2つのnameが違うこと
-
+//itemsの数と表示されているボタンの数が一緒である
 test("hoghogehoge", () => {
   const { getAllByTestId } = render(SegmentedControl, {
     items: [
@@ -38,23 +36,6 @@ test("hoghogehoge", () => {
       {label: '<ANY>',value: '<ANY>'}
     ]
   });
-  //itemsの数と表示されているボタンの数が一緒である  
   expect(getAllByTestId("segmentedControlItem").length).toBe(2);
 });
-
-
-
-//uncheckedのラジオボタンをクリックするとcheckedになる
-// test("uncheckedのチェックボックスをクリックするとcheckedになる", async () => {
-//   const { getByTestId } = render(SegmentedControl, {
-//     isChecked: false,
-//     label: "<ANY>",
-//   });
-//   const input = <HTMLInputElement>getByTestId("segmentedControlRadio");
-//   await fireEvent.click(input);
-//   expect(input.checked).toBe(true);
-// });
-
-//dispachが受け取れている??やれるといいな
-
 
