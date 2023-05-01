@@ -10,3 +10,5 @@ export {
 } from "./components/DefinitionList/";
 export { DropdownAction, DropdownActionItem } from "./components/Dropdown/";
 export { default as Tooltip } from "./components/Tooltip/Tooltip.svelte";
+export { default as SegmentedControl } from "./components/SegmentedControl/SegmentedControl.svelte";
+

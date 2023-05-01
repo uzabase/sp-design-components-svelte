@@ -6,7 +6,7 @@ const config = {
       "preprocess": true
     }
   ],
-    "^.+\\.ts$": "ts-jest"
+  "^.+\\.(t|j)sx?$": "@swc/jest"
 },
 "moduleFileExtensions": [
   "js",
