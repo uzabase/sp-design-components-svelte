@@ -3,6 +3,8 @@
 
   export let label: string;
   export let placement: "left" | "right" | "top" | "bottom" = "top";
+  export let size: "auto" | "width240" | "width320" | "width400" = "auto";
+
   export let zindex: string = "10";
   let showTooltip = false;
 
@@ -28,7 +30,7 @@
 {#if showTooltip}
   <div
     data-testid="tooltipMain"
-    class="tooltip__main"
+    class="tooltip__main {size}"
     style="z-index:{zindex}"
     use:popperContent={extraOpts}
   >

@@ -23,86 +23,90 @@
   function SegmentedControlDispatch(event) {
     console.log(event);
   }
-
 </script>
 
 <main>
   <h1>SegmentedControl</h1>
   <div class="innner">
-  <SegmentedControl on:change={SegmentedControlDispatch} items={[
-    {
-      value:"年度",
-      label:"年度"
-    },
-    {
-      value:"項目",
-      label:"項目"
-    }
-  ]} value="年度">
-  </SegmentedControl>
-</div>
+    <SegmentedControl
+      on:change={SegmentedControlDispatch}
+      items={[
+        {
+          value: "年度",
+          label: "年度",
+        },
+        {
+          value: "項目",
+          label: "項目",
+        },
+      ]}
+      value="年度"
+    />
+  </div>
   <div class="innner">
-  <SegmentedControl items={[
-    {
-      value:"label01",
-      label:"label01"
-    },
-    {
-      value:"label02",
-      label:"label02",
-      disabled:true
-    },
-    {
-      value:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      label:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    },
-    {
-      value:"label03",
-      label:"label03",
-    },
-    {
-      value:"label04",
-      label:"label04",
-    }  
-  ]} value="label04">
-  </SegmentedControl>
+    <SegmentedControl
+      items={[
+        {
+          value: "label01",
+          label: "label01",
+        },
+        {
+          value: "label02",
+          label: "label02",
+          disabled: true,
+        },
+        {
+          value: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+          label: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          value: "label03",
+          label: "label03",
+        },
+        {
+          value: "label04",
+          label: "label04",
+        },
+      ]}
+      value="label04"
+    />
   </div>
 
   <h1>Tooltip</h1>
   <div class="innner tooltip">
-        <Tooltip label="placement=top" placement="top" zindex="12">
-        <Button
-          label="placement=top"
-          type="default"
-          appearance="outline"
-          size="medium"
-        />
-      </Tooltip>     
-        <Tooltip label="placement=bottom" placement="bottom">
-          <Button
-            label="placement=bottom"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip>    
-        <Tooltip label="placement=left" placement="left">
-          <Button
-            label="placement=left"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip> 
-        <Tooltip label="placement=right" placement="right">
-          <Button
-            label="placement=right"
-            type="default"
-            appearance="outline"
-            size="medium"
-          />
-        </Tooltip>
-        </div>
+    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="top" zindex="12" size="auto">
+      <Button
+        label="placement=top size=auto"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="bottom" size="width240">
+      <Button
+        label="placement=bottom size=width240"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="left" size="width320">
+      <Button
+        label="placement=left size=width320"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="right" size="width400">
+      <Button
+        label="placement=right size=width400"
+        type="default"
+        appearance="outline"
+        size="medium"
+      />
+    </Tooltip>
+  </div>
 
   <h1>Button type__default</h1>
   <div class="innner button">

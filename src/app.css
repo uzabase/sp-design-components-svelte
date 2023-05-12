@@ -4,9 +4,6 @@
   display: flex;
   padding: 10px;
 }
-.innner.tooltip > div{
-  margin: 1rem 1rem;
-}
 
 .button-inner li {
   margin: 1rem 1rem;
