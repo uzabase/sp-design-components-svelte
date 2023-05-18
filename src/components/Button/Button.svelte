@@ -1,15 +1,16 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
   export let label: string;
   export let isLoading: boolean = false;
   export let isSelected: boolean = false;
   export let isDisable: boolean = false;
   let clazz: string | undefined = undefined;
   export { clazz as class };
-
   export let type: "default" | "destructive" = "default";
   export let appearance: "outline" | "fill" | "text" = "outline";
   export let size: "medium" | "large" | "xLarge" | "width160" | "width80" =
     "medium";
+  const dispatch = createEventDispatcher();
 
   const allStyles = () => {
     const styles = ["base"];
@@ -56,9 +57,17 @@
 
     return styles.join(" ");
   };
+  function handleOnClick(event) {
+    dispatch("click", event);
+  }
 </script>
 
-<button data-testid="button" class={allStyles()} disabled={isDisable}>
+<button
+  data-testid="button"
+  class={allStyles()}
+  disabled={isDisable}
+  on:click={handleOnClick}
+>
   <span class="base__label">{label}</span>
 </button>
 

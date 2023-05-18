@@ -10,23 +10,22 @@
   color: var(--color-gray-0);
   z-index: 10;
 }
-.tooltip__main.auto{
+.tooltip__main.auto {
   width: auto;
 }
-.tooltip__main.width240{
+.tooltip__main.width240 {
   width: 240px;
 }
-.tooltip__main.width320{
+.tooltip__main.width320 {
   width: 320px;
 }
-.tooltip__main.width400{
+.tooltip__main.width400 {
   width: 400px;
 }
 .tooltip__label {
   font-size: 10px;
 }
-.tooltip__label
-.tooltip__arrow,
+.tooltip__label .tooltip__arrow,
 .tooltip__arrow::before {
   position: absolute;
   width: 8px;

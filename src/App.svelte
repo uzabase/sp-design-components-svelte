@@ -20,6 +20,9 @@
   function checkboxDispatch(event) {
     console.log(event.detail);
   }
+  function buttonDispatch(event) {
+    console.log(event.detail);
+  }
   function SegmentedControlDispatch(event) {
     console.log(event);
   }
@@ -74,7 +77,12 @@
 
   <h1>Tooltip</h1>
   <div class="innner tooltip">
-    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="top" zindex="12" size="auto">
+    <Tooltip
+      label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases."
+      placement="top"
+      zindex="12"
+      size="auto"
+    >
       <Button
         label="placement=top size=auto"
         type="default"
@@ -82,7 +90,11 @@
         size="medium"
       />
     </Tooltip>
-    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="bottom" size="width240">
+    <Tooltip
+      label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases."
+      placement="bottom"
+      size="width240"
+    >
       <Button
         label="placement=bottom size=width240"
         type="default"
@@ -90,7 +102,11 @@
         size="medium"
       />
     </Tooltip>
-    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="left" size="width320">
+    <Tooltip
+      label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases."
+      placement="left"
+      size="width320"
+    >
       <Button
         label="placement=left size=width320"
         type="default"
@@ -98,7 +114,11 @@
         size="medium"
       />
     </Tooltip>
-    <Tooltip label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases." placement="right" size="width400">
+    <Tooltip
+      label="Tooltips should be about one line long, but sometimes they contain multiple lines of supplementary explanation. Use this style in such cases."
+      placement="right"
+      size="width400"
+    >
       <Button
         label="placement=right size=width400"
         type="default"
@@ -118,6 +138,7 @@
           appearance="outline"
           size="medium"
           class="testClass"
+          on:click={buttonDispatch}
         />
       </li>
       <li>
@@ -293,6 +314,7 @@
           type="default"
           appearance="outline"
           size="medium"
+          on:click={checkboxDispatch}
         />
       </li>
       <li>
