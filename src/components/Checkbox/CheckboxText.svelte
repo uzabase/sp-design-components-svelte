@@ -5,16 +5,18 @@
   export let indeterminate: boolean = false;
   export let disabled: boolean = false;
   export let value: string = "on";
-  export let clazz: string = "";
+  export let hoverClass: string = "";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
   export let label: string;
+  let clazz: string | undefined = undefined;
+  export { clazz as class };
 </script>
 
 <label
-  class="base{disabled ? ' disabled' : ''}"
-  on:mouseenter={() => (clazz = "hover")}
-  on:mouseleave={() => (clazz = "")}
+  class="base{disabled ? ' disabled' : ''} {clazz ? clazz : ''}"
+  on:mouseenter={() => (hoverClass = "hover")}
+  on:mouseleave={() => (hoverClass = "")}
 >
   <Checkmark
     {value}
@@ -23,7 +25,7 @@
     {checked}
     {indeterminate}
     {disabled}
-    {clazz}
+    class={hoverClass}
     on:change
   />
   <span class="label" data-testid="label">

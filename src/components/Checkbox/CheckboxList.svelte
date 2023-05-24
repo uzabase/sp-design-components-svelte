@@ -8,9 +8,15 @@
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
   export let label: string;
+  let clazz: string | undefined = undefined;
+  export { clazz as class };
 </script>
 
-<label class="base{disabled ? ' disabled' : ''}{checked ? ' checked' : ''}">
+<label
+  class="base{disabled ? ' disabled' : ''}{checked ? ' checked' : ''} {clazz
+    ? clazz
+    : ''}"
+>
   <Checkmark
     {value}
     {name}

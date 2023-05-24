@@ -7,9 +7,11 @@
   export let value: string = "on";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
+  let clazz: string | undefined = undefined;
+  export { clazz as class };
 </script>
 
-<label class="base">
+<label class="base {clazz ? clazz : ''}">
   <Checkmark
     {value}
     {name}

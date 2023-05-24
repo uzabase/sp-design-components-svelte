@@ -4,10 +4,11 @@
   export let checked: boolean = false;
   export let indeterminate: boolean = false;
   export let disabled: boolean = false;
-  export let clazz: string = "";
   export let value: string = "on";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
+  let clazz: string | undefined = undefined;
+  export { clazz as class };
 
   const dispatch = createEventDispatcher();
   function handleOnChange(event) {
@@ -22,7 +23,7 @@
   }
 </script>
 
-<span class="base {clazz}">
+<span class="base {clazz ? clazz : ''}">
   <input
     type="checkbox"
     {value}

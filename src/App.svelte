@@ -360,6 +360,10 @@
     <Checkbox checked={true} disabled={true} />
     <Checkbox indeterminate={true} disabled={true} />
   </div>
+  <h2>classを渡す</h2>
+  <div class="innner checkbox">
+    <Checkbox class="class1 class2" />
+  </div>
   <h2>フォームパーツとしての働き</h2>
   <div class="innner checkbox">
     <form action="./" method="get">
@@ -380,6 +384,10 @@
     <CheckboxText label="label" checked={true} disabled={true} />
     <CheckboxText label="label" indeterminate={true} disabled={true} />
   </div>
+  <h2>classを渡す</h2>
+  <div class="innner checkbox">
+    <CheckboxText label="label" class="class1 class2" />
+  </div>
   <h2>フォームパーツとしての働き</h2>
   <div class="innner checkbox">
     <form action="./" method="get">
@@ -396,6 +404,8 @@
   <CheckboxList label="label" checked={true} />
   <CheckboxList label="label" disabled={true} />
   <CheckboxList label="onChangeのディスパッチ" on:change={checkboxDispatch} />
+  <h2>classを渡す</h2>
+  <CheckboxList label="label" class="class1 class2" />
   <h1>Card</h1>
   <div class="innner">
     <Card
