@@ -3,9 +3,8 @@
   export let isShow: boolean = false;
   export let isDisable: boolean = false;
 
-  function handleOnClick(event) {
+  function handleOnClick() {
     isShow = !isShow;
-    event.target.blur();
   }
 </script>
 

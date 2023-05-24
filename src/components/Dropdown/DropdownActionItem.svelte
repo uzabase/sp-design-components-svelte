@@ -3,7 +3,7 @@
 </script>
 
 <p class="base">
-  {text}
+  <button class="action">{text}</button>
 </p>
 
 <style src="./dropdownActionItem.css"></style>
