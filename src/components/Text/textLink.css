@@ -1,0 +1,18 @@
+.base {
+  color: var(--color-blue-100);
+  font-size: 12px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.base:hover {
+  text-decoration: underline;
+}
+
+.base.medium {
+  font-weight: normal;
+}
+
+.base.bold {
+  font-weight: bold;
+}

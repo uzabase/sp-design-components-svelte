@@ -1,0 +1,13 @@
+.base {
+  color: var(--color-black-100);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.base.medium {
+  font-weight: normal;
+}
+
+.base.bold {
+  font-weight: bold;
+}

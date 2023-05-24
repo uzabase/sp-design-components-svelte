@@ -1,0 +1,6 @@
+.base {
+  color: var(--color-gray-70);
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.6;
+}
