@@ -1,5 +1,10 @@
 @charset "utf-8";
 @import "@acab/reset.css";
+
+a {
+  text-decoration: none;
+}
+
 .innner {
   display: flex;
   padding: 10px;
