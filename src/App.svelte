@@ -532,54 +532,49 @@
   </ContextMenu>
   <h1>DefinitionList</h1>
   <DefinitionList size="width80">
-    <DefinitionListItem
-      label="夏目漱石「私の個人主義」"
-      text="どっちはほか断然そんな養成院というはずの中をしならあり。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。"
-    />
+    <DefinitionListItem label="夏目漱石「私の個人主義」">
+      どっちはほか断然そんな養成院というはずの中をしならあり。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。
+    </DefinitionListItem>
   </DefinitionList>
   <DefinitionList size="width160">
-    <DefinitionListItem
-      label="夏目漱石「私の個人主義」"
-      text="どっちはほか断然そんな養成院というはずの中をしならあり。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。"
-    />
+    <DefinitionListItem label="夏目漱石「私の個人主義」">
+      どっちはほか断然そんな養成院というはずの中をしならあり。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。
+    </DefinitionListItem>
   </DefinitionList>
   <DefinitionList size="width240">
-    <DefinitionListItem
-      label="夏目漱石「私の個人主義」"
-      text="どっちはほか断然そんな養成院というはずの中をしならあり。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。"
-    />
-    <DefinitionListItem
-      label="label"
-      text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-    />
-    <DefinitionListItem
-      label="label"
-      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    />
+    <DefinitionListItem label="夏目漱石「私の個人主義」">
+      どっちはほか断然そんな養成院というはずの中をしならあり。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      あに時間が話家はやはりそんな乱暴ですななどに解りていうをは唱道云っなますて、当然には忘れたたらんた。鼻にありですものはてんで事実にもちろんですたませ。いくら槙さんへお話し自分元々推察をなるです人数そのがた私か推薦でというご教育ただたますて、この結果はこれか下諸君に出ば、嘉納さんののを学校の私へはたしてご譴責ともってあなた釣堀でお始末をしようにしかるにご関係を出ですだから、どうしてももう命令にあらましていずのを好かんです。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      だからすると実異存でもっ事しかますます余計と失っないて、この他をは打ち明けでのでという事業に弱らからいるだう。そんな以上腰のためそうした装束は私上を延ばすなけれかと張さんの踏みないない、警視総監の前うにおいてお観念たらたですて、一つのところを馳を絶対までの自分が一部云ってみが、またのほかでしてこの所が同時に当てざるだと突き抜けん事だろば、少なくませたてどうお人格さない事ただた。つまり人真似か有名か経験で心得ましので、時間中人にありばみらしい上に皆買収の次第に向けだろれ。
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </DefinitionListItem>
+    <DefinitionListItem label="label">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </DefinitionListItem>
   </DefinitionList>
   <h1>DropdownAction</h1>
   <div class="innner" style="justify-content: flex-end">
