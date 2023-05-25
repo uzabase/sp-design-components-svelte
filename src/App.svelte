@@ -418,6 +418,7 @@
       image="/assets/cardImage.png"
       href="#"
       size="small"
+      outbound={true}
     />
     <Card
       title="mediumたいとる"

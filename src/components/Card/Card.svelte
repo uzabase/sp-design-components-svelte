@@ -5,22 +5,31 @@
   export let time: string | undefined = undefined;
   export let source: string | undefined = undefined;
   export let size: "small" | "medium" | "large" = "medium";
-  export let isOutbound: boolean = false;
+  export let outbound: boolean = false;
 
   let dataTime: string;
   $: dataTime = time && time.split("/").join("-");
 </script>
 
 <div>
-  <a {href} class="base {size}" target={isOutbound ? "_blank" : "_self"}>
+  <a
+    {href}
+    class="base {size}"
+    target={outbound ? "_blank" : "_top"}
+    data-testid="href"
+  >
     <img src={image} class="image" alt="" />
     <div class="lines">
-      <p class="title"><cite class="titleIn">{title}</cite></p>
+      <p class="title">
+        <cite class="titleIn" data-testid="title">{title}</cite>
+      </p>
       {#if time || source}
         <p class="note">
-          {#if time}<time datetime={dataTime}>{time}</time>{/if}
+          {#if time}<time datetime={dataTime} data-testid="time">{time}</time
+            >{/if}
           {#if time && source}<span class="connect" />{/if}
-          {#if source}<cite class="source">{source}</cite>{/if}
+          {#if source}<cite class="source" data-testid="source">{source}</cite
+            >{/if}
         </p>
       {/if}
     </div>
