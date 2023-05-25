@@ -1,11 +1,10 @@
 import { fireEvent } from "@testing-library/dom";
-import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
-import Checkbox from "../src/components/Checkbox/Checkbox.svelte";
+import Checkmark from "../src/components/Checkbox/Checkmark.svelte";
 
 test("uncheckedのチェックボックスをクリックするとcheckedになる", async () => {
-  const { getByTestId } = render(Checkbox, {
-    isChecked: false,
+  const { getByTestId } = render(Checkmark, {
+    checked: false,
   });
   const input = <HTMLInputElement>getByTestId("input");
   await fireEvent.click(input);
@@ -13,8 +12,8 @@ test("uncheckedのチェックボックスをクリックするとcheckedにな�
 });
 
 test("checkedのチェックボックスをクリックするとuncheckedになる", async () => {
-  const { getByTestId } = render(Checkbox, {
-    isChecked: true,
+  const { getByTestId } = render(Checkmark, {
+    checked: true,
   });
   const input = <HTMLInputElement>getByTestId("input");
   await fireEvent.click(input);

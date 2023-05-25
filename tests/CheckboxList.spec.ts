@@ -1,9 +1,8 @@
-import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
-import CheckboxText from "../src/components/Checkbox/CheckboxText.svelte";
+import CheckboxList from "../src/components/Checkbox/CheckboxList.svelte";
 
 test("チェックボックスにラベルが表示される", () => {
-  const { getByTestId } = render(CheckboxText, {
+  const { getByTestId } = render(CheckboxList, {
     label: "ラベル",
   });
   expect(getByTestId("label").textContent).toBe("ラベル");
