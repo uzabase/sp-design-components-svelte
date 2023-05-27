@@ -1,7 +1,7 @@
 {
   "name": "@sp-design/components-svelte",
   "private": true,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
@@ -24,7 +24,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/svelte": "^3.2.2",
     "@testing-library/user-event": "^14.4.3",
-    "@tsconfig/svelte": "^3.0.0",
     "@types/jest": "^29.4.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.4.3",
@@ -45,6 +44,7 @@
     "@acab/reset.css": "^0.5.3",
     "@popperjs/core": "^2.11.7",
     "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^0.5.2",
+    "@tsconfig/svelte": "^3.0.0",
     "svelte-popperjs": "^1.3.2"
   }
 }
