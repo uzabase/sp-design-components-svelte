@@ -1,9 +1,9 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
   export let label: string;
-  export let isLoading: boolean = false;
-  export let isSelected: boolean = false;
-  export let isDisable: boolean = false;
+  export let loading: boolean = false;
+  export let selected: boolean = false;
+  export let disabled: boolean = false;
   let clazz: string | undefined = undefined;
   export { clazz as class };
   export let type: "default" | "destructive" = "default";
@@ -50,9 +50,9 @@
         styles.push("size__width80");
         break;
     }
-    if (isDisable) styles.push("isDisable");
-    if (isSelected) styles.push("isSelected");
-    if (isLoading) styles.push("isLoading");
+    if (disabled) styles.push("isDisable");
+    if (selected) styles.push("isSelected");
+    if (loading) styles.push("isLoading");
     if (clazz) styles.push(clazz);
 
     return styles.join(" ");
@@ -65,7 +65,7 @@
 <button
   data-testid="button"
   class={allStyles()}
-  disabled={isDisable}
+  {disabled}
   on:click={handleOnClick}
 >
   <span class="base__label">{label}</span>
