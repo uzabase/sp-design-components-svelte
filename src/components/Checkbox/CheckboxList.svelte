@@ -12,11 +12,7 @@
   export { clazz as class };
 </script>
 
-<label
-  class="base{disabled ? ' disabled' : ''}{checked ? ' checked' : ''} {clazz
-    ? clazz
-    : ''}"
->
+<label class="base {clazz ? clazz : ''}">
   <Checkmark
     {value}
     {name}

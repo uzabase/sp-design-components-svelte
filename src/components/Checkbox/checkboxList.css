@@ -6,23 +6,23 @@
   cursor: pointer;
 }
 
-.base.checked:not(.disabled) {
-  background: var(--color-blue-10);
-}
-
-.base:hover:not(.disabled) {
+.base:has(input):not(:has(input:disabled)):hover {
   background: var(--color-gray-20);
 }
 
-.base:hover.checked:not(.disabled) {
+.base:has(input:checked):not(:has(input:disabled)) {
+  background: var(--color-blue-10);
+}
+
+.base:has(input:checked):not(:has(input:disabled)):hover {
   background: var(--color-blue-15);
 }
 
-.base.disabled {
+.base:has(input:disabled) {
   cursor: not-allowed;
 }
 
-.base.disabled .label {
+.base:has(input:disabled) .label {
   color: var(--color-gray-50);
 }
 
