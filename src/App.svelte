@@ -406,6 +406,7 @@
   <CheckboxList label="label" />
   <CheckboxList label="label" checked={true} />
   <CheckboxList label="label" disabled={true} />
+  <CheckboxList label="label" checked={true} disabled={true} />
   <CheckboxList label="onChangeのディスパッチ" on:change={checkboxDispatch} />
   <h2>classを渡す</h2>
   <CheckboxList label="label" class="class1 class2" />

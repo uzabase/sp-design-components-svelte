@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.base.checked {
+.base.checked:not(.disabled) {
   background: var(--color-blue-10);
 }
 
@@ -14,7 +14,7 @@
   background: var(--color-gray-20);
 }
 
-.base:hover.checked {
+.base:hover.checked:not(.disabled) {
   background: var(--color-blue-15);
 }
 
