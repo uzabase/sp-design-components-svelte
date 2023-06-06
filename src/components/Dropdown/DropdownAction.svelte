@@ -1,15 +1,17 @@
 <script lang="ts">
+  import { clickOutside } from "../../lib/click_outside.ts";
   export let label: string;
-  export let isShow: boolean = false;
-  export let isDisable: boolean = false;
+  export let disabled: boolean = false;
 
-  function handleOnClick() {
-    isShow = !isShow;
-  }
+  let show: boolean = false;
 </script>
 
-<div class="base{isShow ? ' isShow' : ''}{isDisable ? ' isDisable' : ''}">
-  <button class="action" on:click={handleOnClick} disabled={isDisable}>
+<div
+  class="base{show ? ' show' : ''}{disabled ? ' disabled' : ''}"
+  use:clickOutside
+  on:outclick={() => (show = false)}
+>
+  <button class="action" on:click={() => (show = !show)} {disabled}>
     {label}
   </button>
   <div class="dropdown">

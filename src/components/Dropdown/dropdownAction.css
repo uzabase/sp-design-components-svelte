@@ -58,21 +58,21 @@
   box-shadow: 0px 3px 12px 0px rgba(25, 25, 25, 0.2);
 }
 
-.isShow:not(.isDisable) .action {
+.show:not(.disabled) .action {
   background: var(--color-blue-100);
   border-color: var(--color-blue-100);
   color: var(--color-gray-0);
 }
 
-.isShow:not(.isDisable) .action::after {
+.show:not(.disabled) .action::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M8%2011.327%202.667%205.993l.706-.706L8%209.913l4.627-4.626.706.706L8%2011.327Z%22%2F%3E%3C%2Fsvg%3E");
 }
 
-.isShow:not(.isDisable) .action:hover {
+.show:not(.disabled) .action:hover {
   background: var(--color-blue-90);
   border-color: var(--color-blue-90);
 }
 
-.isShow:not(.isDisable) .dropdown {
+.show:not(.disabled) .dropdown {
   display: block;
 }

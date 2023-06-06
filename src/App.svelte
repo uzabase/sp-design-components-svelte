@@ -150,7 +150,7 @@
           type="default"
           appearance="outline"
           size="medium"
-          isLoading={true}
+          loading={true}
         />
       </li>
       <li>
@@ -159,7 +159,7 @@
           type="default"
           appearance="outline"
           size="medium"
-          isSelected={true}
+          selected={true}
         />
       </li>
       <li>
@@ -168,7 +168,7 @@
           type="default"
           appearance="outline"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -188,7 +188,7 @@
           type="default"
           appearance="fill"
           size="medium"
-          isLoading={true}
+          loading={true}
         />
       </li>
       <li>
@@ -197,7 +197,7 @@
           type="default"
           appearance="fill"
           size="medium"
-          isSelected={true}
+          selected={true}
         />
       </li>
       <li>
@@ -206,7 +206,7 @@
           type="default"
           appearance="fill"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -225,7 +225,7 @@
           type="default"
           appearance="text"
           size="medium"
-          isLoading={true}
+          loading={true}
         />
       </li>
       <li>
@@ -234,7 +234,7 @@
           type="default"
           appearance="text"
           size="medium"
-          isSelected={true}
+          selected={true}
         />
       </li>
       <li>
@@ -243,7 +243,7 @@
           type="default"
           appearance="text"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -265,7 +265,7 @@
           type="destructive"
           appearance="outline"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -284,7 +284,7 @@
           type="destructive"
           appearance="fill"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -303,7 +303,7 @@
           type="destructive"
           appearance="text"
           size="medium"
-          isDisable={true}
+          disabled={true}
         />
       </li>
     </ul>
@@ -586,13 +586,7 @@
       <DropdownActionItem text="text" />
       <DropdownActionItem text="text" />
     </DropdownAction>
-    <DropdownAction label="Label" isDisable={true}>
-      <DropdownActionItem text="text" />
-      <DropdownActionItem text="text" />
-      <DropdownActionItem text="text" />
-      <DropdownActionItem text="text" />
-    </DropdownAction>
-    <DropdownAction label="Label" isShow={true}>
+    <DropdownAction label="Label" disabled={true}>
       <DropdownActionItem text="text" />
       <DropdownActionItem text="text" />
       <DropdownActionItem text="text" />
