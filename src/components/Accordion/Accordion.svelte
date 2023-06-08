@@ -2,19 +2,19 @@
   import { slide } from "svelte/transition";
 
   export let label: string;
-  export let isOpen: boolean = false;
-
-  function handleClick() {
-    isOpen = !isOpen;
-  }
+  export let open: boolean = false;
 </script>
 
-<div class={isOpen ? "isOpen" : ""}>
-  <button on:click={handleClick} class="label">
-    <span class="labelIn">{label}</span>
+<div class={open ? "open" : ""}>
+  <button on:click={() => (open = !open)} class="label">
+    <span class="labelIn" data-testid="label">{label}</span>
   </button>
-  {#if isOpen}
-    <div in:slide={{ duration: 200 }} out:slide={{ duration: 200 }}>
+  {#if open}
+    <div
+      in:slide={{ duration: 200 }}
+      out:slide={{ duration: 200 }}
+      data-testid="contents"
+    >
       <slot />
     </div>
   {/if}

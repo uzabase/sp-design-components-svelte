@@ -36,6 +36,6 @@
   -webkit-line-clamp: 1;
 }
 
-.isOpen .label::after {
+.open .label::after {
   transform: rotate(180deg);
 }
