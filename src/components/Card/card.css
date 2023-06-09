@@ -5,6 +5,7 @@
   border: 1px solid var(--color-gray-40);
   border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .base:hover,
@@ -59,6 +60,7 @@
 }
 
 .base.small {
+  flex-basis: 218px;
   min-width: 218px;
 }
 
@@ -71,6 +73,7 @@
 }
 
 .base.medium {
+  flex-basis: 277px;
   min-width: 277px;
 }
 
@@ -83,6 +86,7 @@
 }
 
 .base.large {
+  flex-basis: 374px;
   min-width: 374px;
 }
 

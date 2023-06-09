@@ -411,8 +411,9 @@
   <h2>classを渡す</h2>
   <CheckboxList label="label" class="class1 class2" />
   <h1>Card</h1>
-  <div class="innner">
+  <div class="innner" style="align-items: flex-start">
     <Card
+      class="ClassName"
       title="smallたいとる"
       time="0000/11/22"
       source="そーす"
@@ -512,7 +513,7 @@
   </div>
   <h1>Accordion</h1>
   <div class="innner">
-    <Accordion label="らべる"
+    <Accordion label="らべる" class="ClassName"
       ><p>
         なかみ<br />なかみ<br />なかみ<br />なかみ<br />なかみ<br />なかみ<br
         />なかみ<br />なかみ<br />なかみ<br />なかみ<br />なかみ<br />なかみ<br

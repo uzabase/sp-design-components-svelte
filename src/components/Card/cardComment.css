@@ -1,10 +1,14 @@
 .base {
   display: inline-block;
   width: 100%;
+  flex-basis: 275px;
+  min-width: 275px;
   background: var(--color-gray-0);
   border: 1px solid var(--color-gray-40);
   border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .base:hover,
@@ -23,7 +27,6 @@
   justify-content: flex-end;
   grid-row-gap: 8px;
   height: 156px;
-  min-width: 277px;
   padding-block: 16px;
   padding-inline: 16px;
   background: linear-gradient(

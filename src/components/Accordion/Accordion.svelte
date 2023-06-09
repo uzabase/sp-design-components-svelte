@@ -3,9 +3,11 @@
 
   export let label: string;
   export let open: boolean = false;
+  let clazz: string | undefined = undefined;
+  export { clazz as class };
 </script>
 
-<div class={open ? "open" : ""}>
+<div class="{clazz ? clazz : ''} {open ? 'open' : ''}" data-testid="base">
   <button on:click={() => (open = !open)} class="label">
     <span class="labelIn" data-testid="label">{label}</span>
   </button>
