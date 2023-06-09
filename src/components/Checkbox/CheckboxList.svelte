@@ -12,7 +12,7 @@
   export { clazz as class };
 </script>
 
-<label class="base {clazz ? clazz : ''}">
+<label class="base {clazz ? clazz : ''}" data-testid="base">
   <Checkmark
     {value}
     {name}

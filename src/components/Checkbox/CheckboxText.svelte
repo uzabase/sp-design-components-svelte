@@ -14,9 +14,10 @@
 </script>
 
 <label
-  class="base{disabled ? ' disabled' : ''} {clazz ? clazz : ''}"
+  class="base {disabled ? 'disabled' : ''} {clazz ? clazz : ''}"
   on:mouseenter={() => (hoverClass = "hover")}
   on:mouseleave={() => (hoverClass = "")}
+  data-testid="base"
 >
   <Checkmark
     {value}
