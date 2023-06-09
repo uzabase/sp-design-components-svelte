@@ -4,8 +4,10 @@
   export { clazz as class };
 </script>
 
-<dl class="base {size} {clazz ? clazz : ''}">
-  <slot />
-</dl>
+{#if Object.keys($$slots).length}
+  <dl class="base {size} {clazz ? clazz : ''}" data-testid="base">
+    <slot />
+  </dl>
+{/if}
 
 <style src="./definitionList.css"></style>
