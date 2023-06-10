@@ -5,7 +5,7 @@ import DefinitionListItem from "../src/components/DefinitionList/DefinitionListI
 test("DefinitionListにclassが表示される", () => {
   const { getByTestId } = render(DefinitionList, {
     label: "<ANY>",
-    $$slot: "<ANY>",
+    $$slots: "<ANY>",
     class: "className",
   });
   expect(getByTestId("base").classList.contains("className")).toBeTruthy();
