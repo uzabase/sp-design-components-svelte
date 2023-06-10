@@ -2,6 +2,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
 import DropdownAction from "../src/components/Dropdown/DropdownAction.svelte";
+import DropdownActionItem from "../src/components/Dropdown/DropdownActionItem.svelte";
 
 test("DropdownActionにclassが表示される", () => {
   const { getByTestId } = render(DropdownAction, {
@@ -64,4 +65,19 @@ test("DropdownActionの、Dropdownを表示した後、コンポーネント以�
   expect(window.getComputedStyle(contents).getPropertyValue("display")).toBe(
     "none"
   );
+});
+
+test("DropdownActionItemにclassが表示される", () => {
+  const { getByTestId } = render(DropdownActionItem, {
+    text: "<ANY>",
+    class: "className",
+  });
+  expect(getByTestId("base").classList.contains("className")).toBeTruthy();
+});
+
+test("DropdownActionItemにtextが表示される", () => {
+  const { getByTestId } = render(DropdownActionItem, {
+    text: "テキスト",
+  });
+  expect(getByTestId("base").textContent).toBe("テキスト");
 });
