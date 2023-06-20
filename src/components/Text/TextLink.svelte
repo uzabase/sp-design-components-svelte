@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let weight: "medium" | "bold" = "medium";
+  export let weight: "normal" | "bold" = "normal";
   let clazz: string | undefined = undefined;
   export { clazz as class };
 </script>
