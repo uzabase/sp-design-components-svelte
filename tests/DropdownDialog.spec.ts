@@ -62,6 +62,7 @@ test("DropdownDialogの、Dropdownを表示した後、コンポーネント以�
 test("DropdownDialogItemにclassが表示される", () => {
   const { getByTestId } = render(DropdownDialogItem, {
     title: "<ANY>",
+    class: "className"
   });
   expect(getByTestId("base").classList.contains("className")).toBeTruthy();
 });
