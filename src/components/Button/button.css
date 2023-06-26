@@ -1,7 +1,7 @@
 .base {
   font-size: 10px;
   padding: 8px 16px;
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-button-outline-default);
   border-radius: 5px;
   font-weight: bold;
   border: 1px solid transparent;
@@ -21,15 +21,19 @@
 }
 
 .type__default.appearance__outline {
-  border: 1px solid var(--color-black-100);
+  border: 1px solid var(--color-semantic-border-button-outline-default);
 }
 .type__default.appearance__outline:hover {
-  border: 1px solid var(--color-gray-70);
-  color: var(--color-gray-70);
+  border: 1px solid var(--color-semantic-border-button-outline-hover);
+  color: var(--color-semantic-text-button-outline-hover);
 }
 .type__default.appearance__outline:focus {
-  border: 1px solid var(--color-gray-70);
-  color: var(--color-gray-70);
+  border: 1px solid var(--color-semantic-border-button-outline-focus);
+  color: var(--color-semantic-text-button-outline-focus);
+}
+.type__default.appearance__outline.isLoading {
+  border: 1px solid var(--color-semantic-border-button-loading);
+  background-color: var(--color-semantic-surface-button-loading);
 }
 .type__default.appearance__outline.isLoading .base__label {
   visibility: hidden;
@@ -40,24 +44,24 @@
 }
 .type__default.appearance__outline.isLoading:hover {
   cursor: not-allowed;
-  border: 1px solid var(--color-black-100);
+  border: 1px solid var(--color-semantic-border-button-loading);
 }
 .type__default.appearance__fill {
-  border: 1px solid var(--color-black-100);
-  background-color: var(--color-black-100);
-  color: var(--color-gray-0);
+  border: 1px solid var(--color-semantic-border-button-fill-default);
+  background-color: var(--color-semantic-surface-button-fill-default);
+  color: var(--color-semantic-text-button-fill-default);
 }
 .type__default.appearance__fill:hover {
-  border: 1px solid var(--color-gray-80);
-  background-color: var(--color-gray-80);
+  border: 1px solid var(--color-semantic-border-button-fill-hover);
+  background-color: var(--color-semantic-surface-button-fill-hover);
 }
 .type__default.appearance__fill:focus {
-  border: 1px solid var(--color-gray-80);
-  background-color: var(--color-gray-80);
+  border: 1px solid var(--color-semantic-border-button-fill-focus);
+  background-color: var(--color-semantic-surface-button-fill-focus);
 }
 .type__default.appearance__fill.isLoading {
-  border: 1px solid var(--color-gray-80);
-  background-color: var(--color-gray-80);
+  border: 1px solid var(--color-semantic-border-button-loading);
+  background-color: var(--color-semantic-surface-button-loading);
 }
 .type__default.appearance__fill.isLoading .base__label {
   visibility: hidden;
@@ -68,22 +72,23 @@
 }
 .type__default.appearance__fill.isLoading:hover {
   cursor: not-allowed;
-  border: 1px solid var(--color-black-100);
+  border: 1px solid var(--color-semantic-border-button-loading);
 }
 .type__default.appearance__text {
-  border: 1px solid transparent;
-  background-color: transparent;
+  border: 1px solid var(--color-semantic-border-button-text-default);
+  background-color: var(--color-semantic-surface-button-text-default);
 }
 .type__default.appearance__text:hover {
-  border: 1px solid var(--color-gray-20);
-  background-color: var(--color-gray-20);
+  border: 1px solid var(--color-semantic-border-button-text-hover);
+  background-color: var(--color-semantic-surface-button-text-hover);
 }
 .type__default.appearance__text:focus {
-  border: 1px solid var(--color-gray-20);
-  background-color: var(--color-gray-20);
+  border: 1px solid var(--color-semantic-border-button-text-focus);
+  background-color: var(--color-semantic-surface-button-text-focus);
 }
 .type__default.appearance__text.isLoading {
-  background-color: var(--color-gray-20);
+  border: 1px solid var(--color-semantic-border-button-loading);
+  background-color: var(--color-semantic-surface-button-loading);
 }
 .type__default.appearance__text.isLoading .base__label {
   visibility: hidden;
@@ -126,60 +131,65 @@
 .type__default.appearance__outline.isSelected,
 .type__default.appearance__fill.isSelected,
 .type__default.appearance__text.isSelected {
-  border: 1px solid var(--color-blue-100);
-  background-color: var(--color-blue-100);
-  color: var(--color-gray-0);
+  border: 1px solid var(--color-semantic-border-button-selected);
+  background-color: var(--color-semantic-surface-button-selected);
+  color: var(--color-semantic-text-button-selected);
 }
 .type__default.appearance__outline.isSelected:hover,
 .type__default.appearance__fill.isSelected:hover,
 .type__default.appearance__text.isSelected:hover {
-  border: 1px solid var(--color-blue-90);
-  background-color: var(--color-blue-90);
+  border: 1px solid var(--color-semantic-border-button-selected-hover);
+  background-color: var(--color-semantic-surface-button-selected-hover);
 }
 .type__default.appearance__outline:disabled,
 .type__default.appearance__fill:disabled,
 .type__default.appearance__text:disabled {
-  border: 1px solid var(--color-gray-40);
-  color: var(--color-gray-50);
-  background-color: var(--color-gray-10);
+  border: 1px solid var(--color-semantic-border-button-disabled);
+  color: var(--color-semantic-text-button-disabled);
+  background-color: var(--color-semantic-surface-button-disabled);
 }
 .type__destructive.appearance__outline {
-  border: 1px solid var(--color-red-100);
-  color: var(--color-red-100);
+  border: 1px solid
+    var(--color-semantic-border-button-outline-destructive-default);
+  color: var(--color-semantic-text-button-outline-destructive-default);
 }
 .type__destructive.appearance__outline:hover {
-  border: 1px solid var(--color-red-70);
-  color: var(--color-red-70);
+  border: 1px solid
+    var(--color-semantic-border-button-outline-destructive-hover);
+  color: var(--color-semantic-text-button-outline-destructive-hover);
 }
 .type__destructive.appearance__outline:focus {
-  border: 1px solid var(--color-red-70);
-  color: var(--color-red-70);
+  border: 1px solid
+    var(--color-semantic-border-button-outline-destructive-focus);
+  color: var(--color-semantic-text-button-outline-destructive-focus);
 }
 .type__destructive.appearance__fill {
-  border: 1px solid var(--color-red-100);
-  background-color: var(--color-red-100);
-  color: var(--color-gray-0);
+  border: 1px solid var(--color-semantic-border-button-fill-destructive-default);
+  background-color: var(
+    --color-semantic-surface-button-fill-destructive-default
+  );
+  color: var(--color-semantic-text-button-fill-destructive-default);
 }
 .type__destructive.appearance__fill:hover {
-  border: 1px solid var(--color-red-80);
-  background-color: var(--color-red-80);
+  border: 1px solid var(--color-semantic-border-button-fill-destructive-hover);
+  background-color: var(--color-semantic-surface-button-fill-destructive-hover);
 }
 .type__destructive.appearance__fill:focus {
-  border: 1px solid var(--color-red-80);
-  background-color: var(--color-red-80);
+  border: 1px solid var(--color-semantic-border-button-fill-destructive-focus);
+  background-color: var(--color-semantic-surface-button-fill-destructive-focus);
 }
 .type__destructive.appearance__text {
   border: 1px solid transparent;
   background-color: transparent;
-  color: var(--color-red-100);
+  color: var(--color-semantic-text-button-text-destructive-default);
 }
 .type__destructive.appearance__text:hover {
-  border: 1px solid var(--color-red-20);
-  background-color: var(--color-red-20);
+  border: 1px solid var(--color-semantic-border-button-text-destructive-hover);
+  background-color: var(--color-semantic-surface-button-text-destructive-hover);
 }
 .type__destructive.appearance__text:focus {
-  border: 1px solid var(--color-red-20);
-  background-color: var(--color-red-20);
+  border: 1px solid var(--color-semantic-border-button-text-destructive-focus);
+  background-color: var(--color-semantic-surface-button-text-destructive-focus);
 }
 .type__destructive.appearance__text.isLoading:hover {
   cursor: not-allowed;
@@ -188,9 +198,9 @@
 .type__destructive.appearance__outline:disabled,
 .type__destructive.appearance__fill:disabled,
 .type__destructive.appearance__text:disabled {
-  border: 1px solid var(--color-gray-40);
-  color: var(--color-gray-50);
-  background-color: var(--color-gray-10);
+  border: 1px solid var(--color-semantic-border-button-disabled);
+  color: var(--color-semantic-text-button-disabled);
+  background-color: var(--color-semantic-surface-button-disabled);
 }
 
 .size__medium {

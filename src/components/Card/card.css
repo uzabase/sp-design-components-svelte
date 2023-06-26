@@ -1,8 +1,8 @@
 .base {
   display: inline-block;
   width: 100%;
-  background: var(--color-gray-0);
-  border: 1px solid var(--color-gray-40);
+  background: var(--color-semantic-surface-regular-1);
+  border: 1px solid var(--color-semantic-border-regular);
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
@@ -30,7 +30,7 @@
 .title {
   display: -webkit-box;
   min-height: 3.2em;
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-heading-regular);
   font-weight: bold;
   line-height: 1.6;
   overflow: hidden;
@@ -44,7 +44,7 @@
 
 .note {
   display: inline-flex;
-  color: var(--color-gray-70);
+  color: var(--color-semantic-text-body-weak);
   font-size: 10px;
   line-height: 1;
 }

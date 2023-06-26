@@ -1,5 +1,5 @@
 .base {
-  color: var(--color-gray-70);
+  color: var(--color-semantic-text-body-weak);
   font-size: 12px;
   font-weight: normal;
   line-height: 1.6;

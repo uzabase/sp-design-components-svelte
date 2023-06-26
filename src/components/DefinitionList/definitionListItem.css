@@ -1,12 +1,12 @@
 .label {
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   font-weight: bold;
   line-height: 1.6;
 }
 
 .text {
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1.6;
   overflow-wrap: break-word;

@@ -8,11 +8,11 @@
 }
 .segmentedControl__item label {
   font-size: 10px;
-  background-color: var(--color-gray-10);
+  background-color: var(--color-semantic-surface-regular-2);
   padding: 8px;
-  border: 1px solid var(--color-gray-40);
+  border: 1px solid var(--color-semantic-border-regular);
   border-right: none;
-  color: var(--color-gray-80);
+  color: var(--color-semantic-text-body-semi-weak);
   display: flex;
   text-align: center;
   box-sizing: border-box;
@@ -26,7 +26,7 @@
 }
 .segmentedControl__item:last-child label {
   border-radius: 0 5px 5px 0;
-  border-right: 1px solid var(--color-gray-40);
+  border-right: 1px solid var(--color-semantic-border-regular);
 }
 .segmentedControl__radio {
   opacity: 0;
@@ -34,18 +34,18 @@
   left: 0;
 }
 .segmentedControl__item:has(.segmentedControl__radio:checked) label {
-  background-color: var(--color-blue-100);
-  borde-color: var(--color-blue-100);
-  color: var(--color-gray-0);
+  background-color: var(--color-semantic-surface-selected);
+  border-color: var(--color-semantic-border-selected);
+  color: var(--color-semantic-text-inverse);
   font-weight: bold;
 }
 .segmentedControl__item label:hover {
-  background-color: var(--color-gray-30);
+  background-color: var(--color-semantic-surface-regular-4);
 }
 .segmentedControl__item label:focus {
-  background-color: var(--color-gray-30);
+  background-color: var(--color-semantic-surface-regular-4);
 }
 .segmentedControl__item:has(.segmentedControl__radio:disabled) label {
-  background-color: var(--color-gray-40);
-  color: var(--color-gray-50);
+  background-color: var(--color-semantic-surface-regular-2);
+  color: var(--color-semantic-text-disabled);
 }

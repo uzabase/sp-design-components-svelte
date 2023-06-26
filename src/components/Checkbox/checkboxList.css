@@ -7,15 +7,15 @@
 }
 
 .base:has(input):not(:has(input:disabled)):hover {
-  background: var(--color-gray-20);
+  background: var(--color-semantic-surface-regular-3);
 }
 
 .base:has(input:checked):not(:has(input:disabled)) {
-  background: var(--color-blue-10);
+  background: var(--color-semantic-surface-checked);
 }
 
 .base:has(input:checked):not(:has(input:disabled)):hover {
-  background: var(--color-blue-15);
+  background: var(--color-primitive-blue-15);
 }
 
 .base:has(input:disabled) {
@@ -23,11 +23,11 @@
 }
 
 .base:has(input:disabled) .label {
-  color: var(--color-gray-50);
+  color: var(--color-semantic-text-disabled);
 }
 
 .label {
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1;
 }

@@ -5,9 +5,9 @@
   min-width: 320px;
   padding-block: 13px;
   padding-inline: 16px;
-  background: var(--color-gray-0);
+  background: var(--color-semantic-surface-regular-1);
   border: 0;
-  border-top: 1px solid var(--color-gray-40);
+  border-top: 1px solid var(--color-semantic-border-regular);
 }
 
 .label::after {
@@ -21,12 +21,12 @@
 }
 
 .label:hover {
-  background: var(--color-gray-20);
+  background: var(--color-semantic-surface-regular-3);
 }
 
 .labelIn {
   display: -webkit-box;
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   font-weight: bold;
   text-align: left;

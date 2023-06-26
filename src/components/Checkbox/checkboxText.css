@@ -10,11 +10,11 @@
 }
 
 .base.disabled .label {
-  color: var(--color-gray-50);
+  color: var(--color-semantic-text-disabled);
 }
 
 .label {
-  color: var(--color-black-100);
+  color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1;
 }

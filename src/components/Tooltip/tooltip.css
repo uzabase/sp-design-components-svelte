@@ -1,13 +1,13 @@
 /**/
 .tooltip__main {
   padding: 8px;
-  background: var(--color-black-100);
+  background: var(--color-semantic-surface-regular-9);
   box-shadow: 0px 3px 12px rgba(25, 25, 25, 0.2);
   border-radius: 2px;
   font-weight: normal;
   font-size: 10px;
   line-height: 160%;
-  color: var(--color-gray-0);
+  color: var(--color-semantic-text-inverse);
   z-index: 10;
 }
 .tooltip__main.auto {

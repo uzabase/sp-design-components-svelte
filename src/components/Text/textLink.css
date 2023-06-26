@@ -1,5 +1,5 @@
 .base {
-  color: var(--color-blue-100);
+  color: var(--color-semantic-text-text-link);
   font-size: 12px;
   line-height: 1.6;
   text-decoration: none;
