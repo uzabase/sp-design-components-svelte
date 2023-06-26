@@ -13,12 +13,14 @@
     DefinitionListItem,
     DropdownAction,
     DropdownActionItem,
+    DropdownDialog,
     Tooltip,
     SegmentedControl,
     TextBody,
     TextCaption,
     TextLink,
   } from "./";
+  import DropdownDialogItem from "./components/Dropdown/DropdownDialogItem.svelte";
 
   function checkboxDispatch(event) {
     console.log(event.detail);
@@ -593,6 +595,14 @@
       <DropdownActionItem text="text" />
       <DropdownActionItem text="text" />
     </DropdownAction>
+  </div>
+  <h1>DropdownDialog</h1>
+  <div class="innner" style="justify-content: flex-end">
+    <DropdownDialog label="検索式を表示">
+      <DropdownDialogItem title="検索式">
+        <p>ああああああああああ</p>
+      </DropdownDialogItem>
+    </DropdownDialog>
   </div>
   <h1>TextBody</h1>
   <TextBody>

@@ -1,11 +1,13 @@
 .segmentedControl__base {
   display: flex;
 }
+
 .segmentedControl__item {
   width: 100%;
   min-width: 80px;
   word-break: break-word;
 }
+
 .segmentedControl__item label {
   font-size: 10px;
   background-color: var(--color-semantic-surface-regular-2);
@@ -21,30 +23,37 @@
   justify-content: center;
   position: relative;
 }
+
 .segmentedControl__item:first-child label {
   border-radius: 5px 0 0 5px;
 }
+
 .segmentedControl__item:last-child label {
   border-radius: 0 5px 5px 0;
   border-right: 1px solid var(--color-semantic-border-regular);
 }
+
 .segmentedControl__radio {
   opacity: 0;
   position: absolute;
   left: 0;
 }
+
 .segmentedControl__item:has(.segmentedControl__radio:checked) label {
   background-color: var(--color-semantic-surface-selected);
   border-color: var(--color-semantic-border-selected);
   color: var(--color-semantic-text-inverse);
   font-weight: bold;
 }
+
 .segmentedControl__item label:hover {
   background-color: var(--color-semantic-surface-regular-4);
 }
+
 .segmentedControl__item label:focus {
   background-color: var(--color-semantic-surface-regular-4);
 }
+
 .segmentedControl__item:has(.segmentedControl__radio:disabled) label {
   background-color: var(--color-semantic-surface-regular-2);
   color: var(--color-semantic-text-disabled);

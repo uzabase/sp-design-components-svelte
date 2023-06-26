@@ -12,7 +12,7 @@
     "medium";
   const dispatch = createEventDispatcher();
 
-  const allStyles = () => {
+  $: allStyles = () => {
     const styles = ["base"];
     switch (type) {
       case "default":

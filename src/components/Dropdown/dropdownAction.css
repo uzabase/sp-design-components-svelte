@@ -1,4 +1,5 @@
 .base {
+  display: inline-block;
   position: relative;
 }
 
@@ -29,6 +30,7 @@
   border-color: var(--color-semantic-border-button-outline-hover);
   color: var(--color-semantic-text-button-outline-hover);
 }
+
 .action:focus {
   border-color: var(--color-semantic-border-button-outline-focus);
   color: var(--color-semantic-text-button-outline-focus);
@@ -58,7 +60,7 @@
   background: var(--color-semantic-surface-regular-1);
   border: 1px solid var(--color-semantic-border-semi-weak);
   border-radius: 5px;
-  box-shadow: 0px 3px 12px 0px rgba(25, 25, 25, 0.2);
+  box-shadow: 0 3px 12px 0 rgb(25 25 25 / 20%);
 }
 
 .show:not(.disabled) .action {

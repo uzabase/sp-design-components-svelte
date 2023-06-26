@@ -1,0 +1,10 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 16px;
+}
+
+.contents {
+  font-size: 12px;
+  line-height: 1.6;
+}

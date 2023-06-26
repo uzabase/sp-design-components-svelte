@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import "@acab/reset.css";
+
+@import url("@acab/reset.css");
 
 a {
   text-decoration: none;
@@ -11,16 +12,19 @@ a {
 }
 
 .button-inner li {
-  margin: 1rem 1rem;
+  margin: 1rem;
 }
+
 h1 {
   font-size: 20px;
   margin: 10px;
 }
+
 h2 {
   font-size: 16px;
   margin: 10px;
 }
+
 .card-inner {
   display: grid;
   grid-column-gap: 8px;
