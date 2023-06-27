@@ -50,7 +50,7 @@
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
     "@popperjs/core": "^2.11.7",
-    "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^3.0.0",
+    "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^4.0.0",
     "@tsconfig/svelte": "^3.0.0",
     "svelte-popperjs": "^1.3.2"
   }

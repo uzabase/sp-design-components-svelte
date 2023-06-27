@@ -15,7 +15,7 @@
 }
 
 .base:has(input:checked):not(:has(input:disabled)):hover {
-  background: var(--color-primitive-blue-15);
+  background: var(--color-semantic-surface-checked-hover);
 }
 
 .base:has(input:disabled) {

@@ -39,7 +39,7 @@
 .title {
   flex-grow: 0;
   display: -webkit-box;
-  color: var(--color-semantic-text-heading-inverse);
+  color: var(--color-semantic-text-inverse);
   font-size: 16px;
   font-weight: bold;
   line-height: 1.6;
