@@ -1,0 +1,9 @@
+.base.row {
+  display: grid;
+  grid-template-columns: repeat(1, 160px 1fr);
+  grid-gap: 16px 8px;
+}
+
+.base.column :global(> dd:not(:last-child)) {
+  margin-bottom: 16px;
+}

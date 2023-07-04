@@ -1,0 +1,16 @@
+.base {
+  display: contents;
+}
+
+.label {
+  padding-block: 5px 4px;
+  padding-inline-end: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.required {
+  color: var(--color-semantic-text-required);
+  text-decoration: none;
+}

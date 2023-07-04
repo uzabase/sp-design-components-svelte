@@ -54,6 +54,7 @@
   display: none;
   position: absolute;
   right: 0;
+  z-index: 1;
   min-width: 202px;
   margin-block-start: 8px;
   padding-block: 8px;
