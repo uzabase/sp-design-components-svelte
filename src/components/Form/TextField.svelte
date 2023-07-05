@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="base {clazz ? clazz : ''}">
+<div class="base {clazz ? clazz : ''}" data-testid="base">
   <input
     type="text"
     {value}
@@ -44,7 +44,7 @@
     <p id={errorId} class="error" data-testid="errorText">{errorText}</p>
   {/if}
   {#if 0 < helpText.length}
-    <p id={helpId} class="help" data-testid="help">{helpText}</p>
+    <p id={helpId} class="help" data-testid="helpText">{helpText}</p>
   {/if}
 </div>
 

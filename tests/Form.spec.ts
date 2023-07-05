@@ -35,7 +35,7 @@ test("TextFieldにclassが表示される", () => {
   const { getByTestId } = render(TextField, {
     class: "className",
   });
-  expect(getByTestId("input").classList.contains("className")).toBeTruthy();
+  expect(getByTestId("base").classList.contains("className")).toBeTruthy();
 });
 
 test("TextFieldにplaceholderが表示される", () => {
@@ -47,12 +47,35 @@ test("TextFieldにplaceholderが表示される", () => {
 
 test("TextFieldのhelpTextが空欄のとき、helpTextがpタグごと表示されない", () => {
   const { queryByTestId } = render(TextField);
-  expect(queryByTestId("help")).toBeNull();
+  expect(queryByTestId("helpText")).toBeNull();
 });
 
 test("TextFieldのhelpTextがあるとき、helpTextが表示される", () => {
   const { getByTestId } = render(TextField, {
     helpText: "helpText",
   });
-  expect(getByTestId("help").textContent).toBe("helpText");
+  expect(getByTestId("helpText").textContent).toBe("helpText");
+});
+
+test("TextFieldがerrorでerrorTextが空欄のとき、errorTextがpタグごと表示されない", () => {
+  const { queryByTestId } = render(TextField, {
+    error: true,
+  });
+  expect(queryByTestId("errorText")).toBeNull();
+});
+
+test("TextFieldがerrorでなくerrorTextが空欄でないとき、errorTextがpタグごと表示されない", () => {
+  const { queryByTestId } = render(TextField, {
+    error: false,
+    errorText: "errorText",
+  });
+  expect(queryByTestId("errorText")).toBeNull();
+});
+
+test("TextFieldがerrorでerrorTextが空欄でないとき、errorTextが表示される", () => {
+  const { getByTestId } = render(TextField, {
+    error: true,
+    errorText: "errorText",
+  });
+  expect(getByTestId("errorText").textContent).toBe("errorText");
 });
