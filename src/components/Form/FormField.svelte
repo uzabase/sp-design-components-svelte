@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
+
   export let required: boolean = false;
   let clazz: string | undefined = undefined;
   export { clazz as class };
@@ -8,8 +10,9 @@
   <dt class="label">
     <slot name="label" />
     {#if required}
-      <abbr title="（必須項目）" class="required" data-testid="required">*</abbr
-      >
+      <abbr title="（必須項目）" class="required" data-testid="required">
+        *
+      </abbr>
     {/if}
   </dt>
   <dd>

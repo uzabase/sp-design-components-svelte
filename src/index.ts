@@ -15,7 +15,7 @@ export {
   DropdownDialogItem,
 } from "./components/Dropdown/";
 export { default as ElementTitle } from "./components/ElementTitle/ElementTitle.svelte";
-export { Form, FormField } from "./components/Form/";
+export { Form, FormField, TextField } from "./components/Form/";
 export { default as SegmentedControl } from "./components/SegmentedControl/SegmentedControl.svelte";
 export { TextBody, TextCaption, TextLink } from "./components/Text/";
 export { default as Tooltip } from "./components/Tooltip/Tooltip.svelte";

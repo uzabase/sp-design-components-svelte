@@ -17,6 +17,7 @@
     ElementTitle,
     Form,
     FormField,
+    TextField,
     Tooltip,
     SegmentedControl,
     TextBody,
@@ -612,21 +613,50 @@
   <h1>Form</h1>
   <Form direction="row">
     <FormField>
-      <span slot="label"> らべる </span>
+      <span slot="label">らべる</span>
       <span slot="item">
         <CheckboxText label="ああああ" />
       </span>
     </FormField>
     <FormField required={true}>
-      <span slot="label"> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </span>
+      <span slot="label">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
       <span slot="item">
         <CheckboxText label="いいいいいいい" />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">textField</span>
+      <span slot="item">
+        <TextField placeholder="いいいいいいい" />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">textFieldのdisabledな子</span>
+      <span slot="item">
+        <TextField
+          value="もとから入ってるvalue"
+          placeholder="あわあわ"
+          disabled={true}
+          helpText="たすけてテキスト"
+        />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">textFieldのエラーな子</span>
+      <span slot="item">
+        <TextField
+          placeholder="あああああああああ"
+          error={true}
+          errorText="もじもじ"
+          required={true}
+          helpText="たすけてえテキスト"
+        />
       </span>
     </FormField>
   </Form>
   <Form direction="column">
     <FormField>
-      <span slot="label" name="label"> 縦組み </span>
+      <span slot="label" name="label">縦組み</span>
       <span slot="item">
         <CheckboxText label="ああああ" />
       </span>
