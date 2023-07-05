@@ -9,12 +9,12 @@
   cursor: not-allowed;
 }
 
-.base.disabled .label {
-  color: var(--color-semantic-text-disabled);
-}
-
 .label {
   color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1;
+}
+
+.base.disabled .label {
+  color: var(--color-semantic-text-disabled);
 }

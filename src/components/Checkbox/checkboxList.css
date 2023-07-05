@@ -6,6 +6,10 @@
   cursor: pointer;
 }
 
+.base:has(input:disabled) {
+  cursor: not-allowed;
+}
+
 .base:has(input):not(:has(input:disabled)):hover {
   background: var(--color-semantic-surface-regular-3);
 }
@@ -18,16 +22,12 @@
   background: var(--color-semantic-surface-checked-hover);
 }
 
-.base:has(input:disabled) {
-  cursor: not-allowed;
-}
-
-.base:has(input:disabled) .label {
-  color: var(--color-semantic-text-disabled);
-}
-
 .label {
   color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1;
+}
+
+.base:has(input:disabled) .label {
+  color: var(--color-semantic-text-disabled);
 }
