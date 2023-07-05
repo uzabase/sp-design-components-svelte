@@ -2,6 +2,11 @@
 
 @import url("@acab/reset.css");
 
+:root {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 a {
   text-decoration: none;
 }

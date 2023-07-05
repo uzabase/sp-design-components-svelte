@@ -9,6 +9,4 @@
   color: var(--color-semantic-text-body-regular);
   font-size: 12px;
   line-height: 1.6;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
