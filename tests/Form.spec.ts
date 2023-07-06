@@ -1,6 +1,8 @@
 import { render } from "@testing-library/svelte";
+import ErrorText from "../src/components/Form/ErrorText.svelte";
 import Form from "../src/components/Form/Form.svelte";
 import FormField from "../src/components/Form/FormField.svelte";
+import HelpText from "../src/components/Form/HelpText.svelte";
 import TextField from "../src/components/Form/TextField.svelte";
 
 test("Formにclassが表示される", () => {
@@ -31,6 +33,38 @@ test("FormFieldの項目が必須でない時、アスタリスクが表示さ�
   expect(queryByTestId("required")).toBeNull();
 });
 
+test("ErrorTextにtextが表示される", () => {
+  const { getByTestId } = render(ErrorText, {
+    id: "<ANY>",
+    text: "テキスト",
+  });
+  expect(getByTestId("error").textContent).toBe("テキスト");
+});
+
+test("ErrorTextにidが表示される", () => {
+  const { getByTestId } = render(ErrorText, {
+    id: "id",
+    text: "<ANY>",
+  });
+  expect(getByTestId("error").getAttribute("id")).toBe("id");
+});
+
+test("HelpTextにtextが表示される", () => {
+  const { getByTestId } = render(HelpText, {
+    id: "<ANY>",
+    text: "テキスト",
+  });
+  expect(getByTestId("help").textContent).toBe("テキスト");
+});
+
+test("HelpTextにidが表示される", () => {
+  const { getByTestId } = render(HelpText, {
+    id: "id",
+    text: "<ANY>",
+  });
+  expect(getByTestId("help").getAttribute("id")).toBe("id");
+});
+
 test("TextFieldにclassが表示される", () => {
   const { getByTestId } = render(TextField, {
     class: "className",
@@ -43,39 +77,4 @@ test("TextFieldにplaceholderが表示される", () => {
     placeholder: "placeholder",
   });
   expect(getByTestId("input").getAttribute("placeholder")).toBe("placeholder");
-});
-
-test("TextFieldのhelpTextが空欄のとき、helpTextがpタグごと表示されない", () => {
-  const { queryByTestId } = render(TextField);
-  expect(queryByTestId("helpText")).toBeNull();
-});
-
-test("TextFieldのhelpTextがあるとき、helpTextが表示される", () => {
-  const { getByTestId } = render(TextField, {
-    helpText: "helpText",
-  });
-  expect(getByTestId("helpText").textContent).toBe("helpText");
-});
-
-test("TextFieldがerrorでerrorTextが空欄のとき、errorTextがpタグごと表示されない", () => {
-  const { queryByTestId } = render(TextField, {
-    error: true,
-  });
-  expect(queryByTestId("errorText")).toBeNull();
-});
-
-test("TextFieldがerrorでなくerrorTextが空欄でないとき、errorTextがpタグごと表示されない", () => {
-  const { queryByTestId } = render(TextField, {
-    error: false,
-    errorText: "errorText",
-  });
-  expect(queryByTestId("errorText")).toBeNull();
-});
-
-test("TextFieldがerrorでerrorTextが空欄でないとき、errorTextが表示される", () => {
-  const { getByTestId } = render(TextField, {
-    error: true,
-    errorText: "errorText",
-  });
-  expect(getByTestId("errorText").textContent).toBe("errorText");
 });

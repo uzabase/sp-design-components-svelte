@@ -30,18 +30,3 @@
 .input[aria-invalid="true"]:focus-visible {
   box-shadow: 0 0 0 3px var(--color-semantic-highlight-focus-ring-error);
 }
-
-.error {
-  margin-block-start: 4px;
-  color: var(--color-semantic-text-error);
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-.help {
-  margin-block-start: 4px;
-  color: var(--color-semantic-text-body-weak);
-  font-size: 10px;
-  line-height: 1.6;
-}

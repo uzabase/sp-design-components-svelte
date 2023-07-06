@@ -1,5 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
+  import ErrorText from "./ErrorText.svelte";
+  import HelpText from "./HelpText.svelte";
 
   export let value: string = "";
   export let name: string | undefined = undefined;
@@ -41,10 +43,10 @@
     on:change={handleOnChange}
   />
   {#if error && 0 < errorText.length}
-    <p id={errorId} class="error" data-testid="errorText">{errorText}</p>
+    <ErrorText id={errorId} text={errorText} />
   {/if}
   {#if 0 < helpText.length}
-    <p id={helpId} class="help" data-testid="helpText">{helpText}</p>
+    <HelpText id={helpId} text={helpText} />
   {/if}
 </div>
 

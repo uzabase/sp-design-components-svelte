@@ -1,0 +1,6 @@
+.help {
+  margin-block-start: 4px;
+  color: var(--color-semantic-text-body-weak);
+  font-size: 10px;
+  line-height: 1.6;
+}
