@@ -1,7 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
-  import ErrorText from "./ErrorText.svelte";
   import HelpText from "./HelpText.svelte";
+  import ErrorText from "./ErrorText.svelte";
 
   export let value: string = "";
   export let name: string | undefined = undefined;
@@ -25,8 +25,7 @@
 </script>
 
 <div class="base {clazz ? clazz : ''}" data-testid="base">
-  <input
-    type="text"
+  <textarea
     bind:value
     {name}
     {id}
@@ -38,7 +37,7 @@
     0 < errorText.length
       ? errorId
       : ''}"
-    data-testid="input"
+    data-testid="textarea"
     class="text"
     on:change={handleOnChange}
   />

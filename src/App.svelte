@@ -18,6 +18,7 @@
     Form,
     FormField,
     TextField,
+    TextArea,
     Tooltip,
     SegmentedControl,
     TextBody,
@@ -651,6 +652,23 @@
           required={true}
           helpText="たすけてえテキスト"
         />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">textArea</span>
+      <span slot="item">
+        <TextArea
+          placeholder="いいいいいいい"
+          helpText="へるぷだよ"
+          value="なにゃ\r\n\n改行は。。。
+こう"
+        />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">textArea</span>
+      <span slot="item">
+        <TextArea placeholder="いいいいいいい" />
       </span>
     </FormField>
   </Form>
