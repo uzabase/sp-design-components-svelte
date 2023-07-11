@@ -33,10 +33,9 @@
     {disabled}
     aria-required={required}
     aria-invalid={error}
-    aria-describedby="{0 < helpText.length ? helpId : ''} {error &&
-    0 < errorText.length
-      ? errorId
-      : ''}"
+    aria-describedby="
+      {0 < helpText.length ? helpId : ''}
+       {error && 0 < errorText.length ? errorId : ''}"
     data-testid="textarea"
     class="text"
     on:change={handleOnChange}

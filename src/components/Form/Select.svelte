@@ -2,11 +2,8 @@
   import { createEventDispatcher } from "svelte";
   import ErrorText from "./ErrorText.svelte";
   import HelpText from "./HelpText.svelte";
-
-  export let value: string = "";
   export let name: string | undefined = undefined;
   export let id: string | undefined = undefined;
-  export let placeholder: string = "";
   export let disabled: boolean = false;
   export let error: boolean = false;
   export let errorText: string = "";
@@ -25,22 +22,21 @@
 </script>
 
 <div class="base {clazz ? clazz : ''}" data-testid="base">
-  <input
-    type="text"
-    bind:value
+  <select
     {name}
     {id}
-    {placeholder}
     {disabled}
     aria-required={required}
     aria-invalid={error}
     aria-describedby="
       {0 < helpText.length ? helpId : ''}
        {error && 0 < errorText.length ? errorId : ''}"
-    data-testid="input"
-    class="text"
+    data-testid="select"
+    class="select"
     on:change={handleOnChange}
-  />
+  >
+    <slot />
+  </select>
   {#if error && 0 < errorText.length}
     <ErrorText id={errorId} text={errorText} />
   {/if}
@@ -49,4 +45,4 @@
   {/if}
 </div>
 
-<style src="./text.css"></style>
+<style src="./select.css"></style>

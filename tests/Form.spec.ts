@@ -3,6 +3,7 @@ import ErrorText from "../src/components/Form/ErrorText.svelte";
 import Form from "../src/components/Form/Form.svelte";
 import FormField from "../src/components/Form/FormField.svelte";
 import HelpText from "../src/components/Form/HelpText.svelte";
+import Select from "../src/components/Form/Select.svelte";
 import TextArea from "../src/components/Form/TextArea.svelte";
 import TextField from "../src/components/Form/TextField.svelte";
 
@@ -94,4 +95,11 @@ test("TextAreaにplaceholderが表示される", () => {
   expect(getByTestId("textarea").getAttribute("placeholder")).toBe(
     "placeholder"
   );
+});
+
+test("Selectにclassが表示される", () => {
+  const { getByTestId } = render(Select, {
+    class: "className",
+  });
+  expect(getByTestId("base").classList.contains("className")).toBeTruthy();
 });

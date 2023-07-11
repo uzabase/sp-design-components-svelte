@@ -19,6 +19,7 @@
     FormField,
     TextField,
     TextArea,
+    Select,
     Tooltip,
     SegmentedControl,
     TextBody,
@@ -669,6 +670,26 @@
       <span slot="label">textArea</span>
       <span slot="item">
         <TextArea placeholder="いいいいいいい" />
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">Select</span>
+      <span slot="item">
+        <Select>
+          <option disabled selected>選択してください</option>
+          <option>option1</option>
+          <option>option2</option>
+        </Select>
+      </span>
+    </FormField>
+    <FormField required={true}>
+      <span slot="label">Select</span>
+      <span slot="item">
+        <Select disabled={true}>
+          <option>選択してください</option>
+          <option>option1</option>
+          <option>option2</option>
+        </Select>
       </span>
     </FormField>
   </Form>
