@@ -1,0 +1,67 @@
+.base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-gap: 16px;
+  padding-block: 16px;
+  padding-inline: 24px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+.base.information {
+  background: var(--color-semantic-surface-information-1);
+  border-color: var(--color-semantic-border-information);
+}
+
+.base.success {
+  background: var(--color-semantic-surface-success-1);
+  border-color: var(--color-semantic-border-success);
+}
+
+.base.warning {
+  background: var(--color-semantic-surface-warning-1);
+  border-color: var(--color-semantic-border-warning);
+}
+
+.base.error {
+  background: var(--color-semantic-surface-error-1);
+  border-color: var(--color-semantic-border-error);
+}
+
+.contents {
+  display: flex;
+  grid-column-gap: 8px;
+}
+
+.text {
+  margin-block: 2.5px;
+  color: var(--color-semantic-text-body-regular);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.close {
+  border: none;
+  background: none;
+}
+
+.close:hover {
+  border-radius: 100%;
+}
+
+.base.information .close:hover {
+  background-color: var(--color-semantic-surface-information-3);
+}
+
+.base.success .close:hover {
+  background-color: var(--color-semantic-surface-success-3);
+}
+
+.base.warning .close:hover {
+  background-color: var(--color-semantic-surface-warning-3);
+}
+
+.base.error .close:hover {
+  background-color: var(--color-semantic-surface-error-3);
+}
