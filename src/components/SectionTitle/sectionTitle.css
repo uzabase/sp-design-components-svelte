@@ -1,0 +1,12 @@
+.base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-gap: 24px;
+  min-height: 30px;
+  background: var(--color-semantic-surface-regular-1);
+}
+
+.end {
+  flex-shrink: 0;
+}

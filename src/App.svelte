@@ -25,6 +25,8 @@
     PageTitleHeading,
     RadioButtonText,
     Tooltip,
+    SectionTitle,
+    SectionTitleHeading,
     SegmentedControl,
     TextBody,
     TextCaption,
@@ -702,7 +704,7 @@
   </Form>
   <Form direction="column">
     <FormField>
-      <span slot="label" name="label">縦組み</span>
+      <span slot="label">縦組み</span>
       <span slot="item">
         <CheckboxText label="ああああ" />
       </span>
@@ -771,6 +773,17 @@
       disabled={true}
     />
   </div>
+  <h1>SectionTitle</h1>
+  <SectionTitle>
+    <div slot="first">
+      <SectionTitleHeading text="SectionTitle" />
+    </div>
+    <div slot="end">
+      <Button label="ボタン" />
+      <Button label="ボタン" />
+      <Button label="ボタン" />
+    </div>
+  </SectionTitle>
   <h1>TextBody</h1>
   <TextBody>
     もち十一月に圧迫者も何しろこういうお話しないうなりにただすからいるでしょへは相違いうんないが、どうにはしますたでない。害にするないのはしかるに今がたしかたたで。もう槙さんに担任個人そう徹底がするです校長この権力私か話がというご焦燥んませませらしいから、大きな場合もそれか堅めばらばらを退けが、大森さんののの相場の私がいくらお批評と感ずるけれども私自分にお観念がさようにけっしてご学習の解らないでで、ほとんどけっして推察に使うませてもらっませのに行くないなけれ。しかしまた小筋が見せるのもどう重宝と云っまして、その代りにはいけたらとという内意がなっがいるんでしょ。その中教師の時この先生は私末がするたかと向君を思うですん、新の生涯ましというお承諾うたませから、学校の時を右を九月くらいの金が今朝しからいて、たったの場合にいうがそんな所が同時にはおりませたとするます事ないて、ないないですが別段ご時分いうましはずでますな。

@@ -25,6 +25,7 @@ export {
 export { default as NotificationBar } from "./components/NotificationBar/NotificationBar.svelte";
 export { PageTitle, PageTitleHeading } from "./components/PageTitle/";
 export { default as RadioButtonText } from "./components/RadioButton/RadioButtonText.svelte";
+export { SectionTitle, SectionTitleHeading } from "./components/SectionTitle/";
 export { default as SegmentedControl } from "./components/SegmentedControl/SegmentedControl.svelte";
 export { TextBody, TextCaption, TextLink } from "./components/Text/";
 export { default as Tooltip } from "./components/Tooltip/Tooltip.svelte";
