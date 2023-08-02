@@ -1,0 +1,13 @@
+.base {
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 24px;
+  padding-block: 18px;
+  padding-inline: 30px;
+  background: var(--color-semantic-surface-regular-1);
+  border-bottom: 1px solid var(--color-semantic-border-semi-weak);
+}
+
+.end {
+  flex-shrink: 0;
+}

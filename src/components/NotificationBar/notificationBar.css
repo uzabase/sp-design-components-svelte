@@ -7,7 +7,7 @@
   padding-inline: 24px;
   border: solid 1px;
   border-radius: 5px;
-  box-shadow: 0px 3px 12px 0px var(--color-semantic-elevation-regular);
+  box-shadow: 0 3px 12px 0 var(--color-semantic-elevation-regular);
 }
 
 .base.information {
@@ -35,6 +35,10 @@
   grid-column-gap: 8px;
 }
 
+.icon {
+  flex-shrink: 0;
+}
+
 .text {
   margin-block: 2.5px;
   color: var(--color-semantic-text-body-regular);
@@ -43,6 +47,7 @@
 }
 
 .close {
+  flex-shrink: 0;
   border: none;
   background: none;
 }

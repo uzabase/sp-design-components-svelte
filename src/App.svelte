@@ -21,6 +21,8 @@
     TextArea,
     Select,
     NotificationBar,
+    PageTitle,
+    PageTitleHeading,
     Tooltip,
     SegmentedControl,
     TextBody,
@@ -720,12 +722,40 @@
       <Button label="Label" />
     </div>
   </NotificationBar>
-  <NotificationBar type="success">すろっと</NotificationBar>
+  <NotificationBar type="success"
+    >すろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっとすろっと</NotificationBar
+  >
   <NotificationBar type="warning">すろっと</NotificationBar>
   <NotificationBar type="error">すろっと</NotificationBar>
-  <NotificationBar type="error" on:closeClick={notificationBarDispatch}
-    >すろっと</NotificationBar
-  >
+  <NotificationBar type="error" on:closeClick={notificationBarDispatch}>
+    すろっと
+  </NotificationBar>
+  <h1>PageTitle</h1>
+  <PageTitle>
+    <div slot="first">
+      <PageTitleHeading text="PageTitle" />
+    </div>
+    <div slot="end">
+      <div style="display: flex; grid-column-gap: 8px;">
+        <Button label="ボタン" />
+      </div>
+    </div>
+  </PageTitle>
+  <PageTitle>
+    <div slot="first">
+      <PageTitleHeading
+        text="PageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitlePageTitle"
+      />
+    </div>
+    <div slot="end">
+      <div style="display: flex; grid-column-gap: 8px;">
+        <Button label="ボタン" />
+        <Button label="ボタン" />
+        <Button label="ボタン" />
+        <Button label="ボタン" />
+      </div>
+    </div>
+  </PageTitle>
   <h1>TextBody</h1>
   <TextBody>
     もち十一月に圧迫者も何しろこういうお話しないうなりにただすからいるでしょへは相違いうんないが、どうにはしますたでない。害にするないのはしかるに今がたしかたたで。もう槙さんに担任個人そう徹底がするです校長この権力私か話がというご焦燥んませませらしいから、大きな場合もそれか堅めばらばらを退けが、大森さんののの相場の私がいくらお批評と感ずるけれども私自分にお観念がさようにけっしてご学習の解らないでで、ほとんどけっして推察に使うませてもらっませのに行くないなけれ。しかしまた小筋が見せるのもどう重宝と云っまして、その代りにはいけたらとという内意がなっがいるんでしょ。その中教師の時この先生は私末がするたかと向君を思うですん、新の生涯ましというお承諾うたませから、学校の時を右を九月くらいの金が今朝しからいて、たったの場合にいうがそんな所が同時にはおりませたとするます事ないて、ないないですが別段ご時分いうましはずでますな。

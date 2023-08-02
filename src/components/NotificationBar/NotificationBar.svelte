@@ -32,7 +32,7 @@
   aria-live={type === "error" ? "assertive" : "polite"}
 >
   <dl class="contents">
-    <dt>
+    <dt class="icon">
       {#if type === "information"}
         <svg
           xmlns="http://www.w3.org/2000/svg"

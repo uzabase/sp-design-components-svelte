@@ -1,4 +1,4 @@
-import {render} from "@testing-library/svelte";
+import { render } from "@testing-library/svelte";
 import NotificationBar from "../src/components/NotificationBar/NotificationBar.svelte";
 
 test("NotificationBarにclassが表示される", () => {
