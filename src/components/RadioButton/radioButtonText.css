@@ -1,0 +1,88 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.base:has(.input:disabled) {
+  cursor: not-allowed;
+}
+
+.input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.mark {
+  display: inline-flex;
+  padding-block: 4px;
+  padding-inline: 4px;
+  cursor: pointer;
+}
+
+.markIn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background: var(--color-semantic-surface-regular-1) 50% 50% no-repeat;
+  border: 1px solid var(--color-semantic-border-check-unchecked);
+  border-radius: 100%;
+}
+
+:is(.base:hover, .hover) .markIn {
+  background-color: var(--color-semantic-surface-regular-3);
+}
+
+.base .input:focus-visible + .mark .markIn {
+  border-color: var(--color-semantic-border-focus);
+  box-shadow: 0 0 0 3px var(--color-semantic-highlight-focus-ring-default);
+}
+
+.base .input:checked + .mark .markIn {
+  background-color: var(--color-semantic-surface-selected);
+  border-color: var(--color-semantic-border-selected);
+}
+
+.base .input:checked + .mark .markIn::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-semantic-surface-regular-1);
+  border-radius: 100%;
+}
+
+:is(.base:hover, .hover) .input:checked + .mark .markIn {
+  background-color: var(--color-semantic-surface-selected-hover);
+  border-color: var(--color-semantic-border-selected-hover);
+}
+
+.base :is(.input:disabled, .input:disabled:hover) + .mark {
+  cursor: not-allowed;
+}
+
+.base :is(.input:disabled, .input:disabled:hover) + .mark .markIn {
+  background-color: var(--color-semantic-surface-check-disabled);
+  border-color: var(--color-semantic-border-regular);
+}
+
+.base
+  :is(.input:checked:disabled, .input:checked:disabled:hover)
+  + .mark
+  .markIn {
+  border-color: var(--color-semantic-surface-check-disabled);
+}
+
+.label {
+  color: var(--color-semantic-text-body-regular);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.base:has(.input:disabled) .label {
+  color: var(--color-semantic-text-disabled);
+}
